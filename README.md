@@ -1,4 +1,4 @@
-# My ROS2 Documentation on the Be.Neutral PPS14 Project
+# My ROS2 documentation about the Be.Neutral PPS14 project
 
 ## ROS2 Tutorial
 Based on the [ROS 2: Humble Documentation](https://docs.ros.org/en/humble/index.html).
@@ -81,4 +81,230 @@ Each communication type has its own interface files: topics use `.msg`, services
 It's possible to create nodes, parameters, topics, services and actions using either **Python or CMake**, which are officially supported but there are other build types created by the community.
 
 **Only CMake is officially supported to build interfaces**. The **best practice is to declare interfaces in a dedicated package** to be used by other packages, although it is possible to create and use an interface in one package (in this case, [ament_cmake_python](https://github.com/ament/ament_cmake/tree/humble/ament_cmake_python) is a useful package to use Python libraries and nodes in a CMake package).
+</details>
+
+### ROS2 Commands
+<details><summary>General Commands</summary>
+
+- View the ROS graph:
+```
+rqt_graph
+```
+
+- Control the ROS2 Elements (followed by `Plugins > Services > Service Caller`):
+```
+rqt
+```
+
+- View logs:
+```
+ros2 run rqt_console rqt_console
+```
+
+- Identify issues:
+```
+ros2 doctor
+```
+or
+```
+ros2 doctor --report
+```
+</details>
+
+<details><summary>Node Commands</summary>
+
+- Start a node:
+```
+ros2 run <package-name> <executable-name>
+```
+or (changing starting parameters)
+```
+ros2 run <package-name> <executable-name> --ros-args --remap <parameter-name>:=<value>
+```
+or (loading starting parameters from a file)
+```
+ros2 run <package-name> <executable-name> --ros-args --params-file <file-path>
+```
+or (setting default logger level - `FATAL`, `ERROR`, `WARN`, `INFO`, `DEBUG`)
+```
+ros2 run <package-name> <executable-name> --ros-args --log-level <level>
+```
+
+- List active nodes:
+```
+ros2 node list
+```
+
+- View node information:
+```
+ros2 node info <node-name>
+```
+</details>
+
+<details><summary>Parameter Commands</summary>
+
+- List parameters:
+```
+ros2 param list
+```
+
+- View the type and current value of a parameter:
+```
+ros2 param get <node-name> <parameter-name>
+```
+
+- View all the parameters of a node:
+```
+ros2 param dump <node-name>
+```
+
+- Change the parameters of a node:
+```
+ros2 param set <node-name> <parameter-name> <value>
+```
+
+- Save the parameters of a node on a file:
+```
+ros2 param dump <node-name> > <file-name>.yaml
+```
+
+- Load the parameters of a file on a node:
+```
+ros2 param load <node-name> <file-path>
+```
+</details>
+
+<details><summary>Topic Commands</summary>
+
+- List topics:
+```
+ros2 topic list
+```
+or (with their types)
+```
+ros2 topic list -t
+```
+
+- View topic information:
+```
+ros2 topic info <topic-name>
+```
+
+- View messages passing through a topic:
+```
+ros2 topic echo <topic-name>
+```
+
+- View topic interface:
+```
+ros2 interface show <topic-type>
+```
+
+- View topic frequency:
+```
+ros2 topic hz <topic-name>
+```
+
+- Publish a message on a topic:
+```
+ros2 topic pub <topic-name> <topic-type> "<arguments>"
+```
+or (only once)
+```
+ros2 topic pub --once <topic-name> <topic-type> "<arguments>"
+```
+or (with a frequency, in Hz)
+```
+ros2 topic pub --rate <frequency> <topic-name> <topic-type> "<arguments>"
+```
+</details>
+
+<details><summary>Service Commands</summary>
+
+- List services:
+```
+ros2 service list
+```
+or (with their types)
+```
+ros2 service list -t
+```
+
+- View service type:
+```
+ros2 service type <service-name>
+```
+
+- View all services of a specific type:
+```
+ros2 service find <service-type>
+```
+
+- View service interface:
+```
+ros2 interface show <service-type>
+```
+
+- Call a service:
+```
+ros2 service call <service-name> <service-type> <arguments>
+```
+</details>
+
+<details><summary>Action Commands</summary>
+
+- List actions:
+```
+ros2 action list
+```
+or (with their types)
+```
+ros2 action list -t
+```
+
+- View action information:
+```
+ros2 action info <action-name>
+```
+
+- View action interface:
+```
+ros2 interface show <action-type>
+```
+
+- Send a goal
+```
+ros2 action send_goal <action-name> <action-type> <values>
+```
+</details>
+
+<details><summary>Bag Command</summary>
+
+- Record topic:
+```
+ros2 bag record [<topic-names>]
+```
+or (saving in a custom file)
+```
+ros2 bag record -o <file-name> [<topic-names>]
+```
+
+- View recording information:
+```
+ros2 bag info <file-name>
+```
+
+- Replay recording:
+```
+ros2 bag play <file-name>
+```
+or (select topics)
+```
+ros2 bag play <file-name> --topics [<topic-names>]
+```
+
+- View messages passing through a topic while the recording is being replayed:
+```
+ros2 topic echo <topic-name>
+```
 </details>
