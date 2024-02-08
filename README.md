@@ -24,28 +24,28 @@ Each `node` in ROS should be **responsible for a single, modular purpose**, e.g.
 
 A `parameter` is a configuration value of a node. You can think of parameters as **node settings**. A node can store parameters as integers, floats, booleans, strings, and lists. In ROS 2, each node maintains its own parameters.
 
-![ROS graph with nodes](https://github.com/hugo-baptista/images-and-gifs/tree/main/ros2/nodes.gif)
+![](https://github.com/hugo-baptista/images-and-gifs/tree/main/ros2/nodes.gif)
 </details>
 
 <details><summary>Topics</summary>
 
 `Topics` are one of the main ways in which data is moved between nodes and therefore between different parts of the system. They follow the **publisher-subscriber model**. A node may publish data to any number of topics and simultaneously have subscriptions to any number of topics. Topics allow nodes to **subscribe to data streams and get continual updates**.
 
-![ROS graph with nodes communicating through a topic](https://github.com/hugo-baptista/images-and-gifs/tree/main/ros2/topic.gif)
+![](https://github.com/hugo-baptista/images-and-gifs/tree/main/ros2/topic.gif)
 </details>
 
 <details><summary>Services</summary>
 
 `Services` are another method of communication for nodes in the ROS graph, based on a **call-and-response model**. While topics allow nodes to subscribe to data streams and get continual updates, services **only provide data when they are specifically called** by a client.
 
-![ROS graph with nodes communicating through a service](https://github.com/hugo-baptista/images-and-gifs/tree/main/ros2/service.gif)
+![](https://github.com/hugo-baptista/images-and-gifs/tree/main/ros2/service.gif)
 </details>
 
 <details><summary>Actions</summary>
 
 `Actions` are one of the communication types in ROS 2, they use the **client-server model** and are **intended for long running tasks**. They are built on topics and services, consisting of three parts: a goal (service), feedback (topic), and a result (service). These elements allow actions to **provide steady feedback** like topics, **provide data only when they are called** like services, and **allow them to be cancelled**. An “action client” node sends a goal to an “action server” node that acknowledges the goal and returns a stream of feedback and a result.
 
-![ROS graph with nodes communicating through a topic](https://github.com/hugo-baptista/images-and-gifs/tree/main/ros2/action.gif)
+![](https://github.com/hugo-baptista/images-and-gifs/tree/main/ros2/action.gif)
 </details>
 
 <details><summary>Interfaces</summary>
