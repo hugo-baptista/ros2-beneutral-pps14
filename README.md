@@ -12,7 +12,7 @@ wsl --install
 
 Then, I installed [Ubuntu 22.04.3 LTS](https://apps.microsoft.com/detail/9PN20MSR04DW?hl=en-us&gl=US), opened and configured it.
 
-Lastly, I followed the steps available on the [Ubuntu (Debian packages) Installation](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html#).
+Lastly, I followed the steps available on the [ROS 2: Humble Ubuntu (Debian packages) Installation](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html#).
 </details>
 
 ### ROS2 Elements
@@ -76,7 +76,7 @@ Each communication type has its own interface files: topics use `.msg`, services
 
 <details><summary>Packages</summary>
 
-`Packages` are the organizational units of the ROS 2 code. Package creation in ROS 2 uses ament as its build system and colcon as its build tool. **They allow users to install their code and share it** with others easily.
+`Packages` are the organizational units of the ROS 2 code. Package creation in ROS 2 uses `ament` as its build system and `colcon` as its build tool. **They allow users to install their code and share it** with others easily.
 
 It's possible to create nodes, parameters, topics, services and actions using either **Python or CMake**, which are officially supported but there are other build types created by the community.
 
@@ -105,7 +105,7 @@ ros2 run rqt_console rqt_console
 ```
 ros2 doctor
 ```
-or
+or (with full report)
 ```
 ros2 doctor --report
 ```
@@ -306,5 +306,187 @@ ros2 bag play <file-name> --topics [<topic-names>]
 - View messages passing through a topic while the recording is being replayed:
 ```
 ros2 topic echo <topic-name>
+```
+</details>
+
+## Building Packages
+<details><summary>Errors</summary>
+
+- While building the [examples package](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html), the error `c++: fatal error: Killed signal terminated program cc1plus compilation terminated.` occurred. This indicates that the building process is consuming too many resources, so it had to me aborted. Therefore, I limited the amount of CPU cores that the process had available to 1, using the command:
+```
+export MAKEFLAGS="-j1"
+```
+
+- Couldn't setup the [colcon_cd](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html#setup-colcon-cd) and the [colcon tab completion](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html#setup-colcon-tab-completion).
+</details>
+
+<details><summary>Creating a Workspace</summary>
+
+- Create the workspace directory:
+```
+mkdir -p <path>/<workspace-name>/src
+```
+
+- Verify dependencies (in the `<workspace-name>` directory):
+```
+rosdep install -i --from-path src --rosdistro humble -y
+```
+
+- Add the necessary packages (in the `src` directory) and build them (in the `<workspace-name>` directory):
+```
+colcon build --symlink-install
+```
+or
+```
+colcon build --symlink-install --packages-select [<package-names>]
+```
+Usually the built artifacts (executables, libraries, etc.) are copied to the install space. But the `--symlink-install` option creates symbolic links (symlinks) to the build space instead of copying the files.
+
+This is useful in development scenarios where changes in the source code immediately affect the installed files without the need to rebuild and reinstall. This may, however, have implications for distribution and deployment, so it's important to consider the context and requirements of the specific use case.
+
+- Test the built package:
+```
+colcon test
+```
+
+- Source the environment:
+```
+source install/setup.bash
+```
+
+- During the tutorial, I created the `tutorial-ws` workspace.
+</details>
+
+<details><summary>Creating a Python Package</summary>
+
+- In the `src` directory:
+```
+ros2 pkg create --build-type ament_python --license Apache-2.0 <package-name>
+```
+
+- Update the fields `maintainer`, `maintainer_email`, `description` and `license` from the `package.xml` and `setup.py` files (they have to be the same in both of them).
+
+- Every time a executable is created or removed (from the `<package-name>` directory), it is necessary to update the [dependencies](https://docs.ros.org/en/humble/Tutorials/Intermediate/Rosdep.html) in the `package.xml` file and add the executable to `setup.py > entry_points > console_scripts` as `'<executable-name> = <package-name>.<file-name>:main',`  (here, `<executable-name>` is the name that ROS will recognize and `<file-name>` is the `.py` file).
+
+- The `my_package`, `py_pubsub`, `py_srvcli` and `py_action` packages have executables that write `Hello World` in the Command Prompt, that communicate through a `topic`, that communicate through a `service` and that communicate through an `action`, respectively.
+</details>
+
+<details><summary>Creating an Interface Package (.msg, .srv and .action)</summary>
+
+- Create a CMake package:
+```
+ros2 pkg create --build-type ament_cmake --license Apache-2.0 <interface-name>
+```
+
+- In the package's directory, create 3 subdirectories (`msg`, `srv` and `action`):
+```
+mkdir msg srv action
+```
+
+- In the `msg` directory put the `.msg` files (for topics) with this formatting:
+```
+<parameter-type> <parameter-name>
+```
+
+- In the `srv` directory put the `.srv` files (for services) with this formatting:
+```
+<parameter-type> <parameter-name>     (call)
+---
+<parameter-type> <parameter-name>     (response)
+```
+
+- In the `action` directory put the `.action` files (for actions) with this formatting:
+```
+<parameter-type> <parameter-name>     (request/goal)
+---
+<parameter-type> <parameter-name>     (result)
+---
+<parameter-type> <parameter-name>     (feedback)
+```
+
+- After that, it is necessary to update the `CMakeLists.txt` file with all required packages (before the `if(BUILD_TESTING)` line):
+```
+find_package(rosidl_default_generators REQUIRED)
+find_package(<required-package> REQUIRED)   # optional, only if packages were used
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/<msg-name>.msg"
+  "srv/<srv-name>.srv"
+  "action/<action-name>.action"
+  DEPENDENCIES <required-package>           # optional, only if packages were used
+)
+```
+
+- Update `package.xml` with the dependencies:
+```
+<depend><required-package></depend>         # optional, only if packages were used
+<depend>action_msgs</depend>                # optional, only if actions were used
+
+<buildtool_depend>rosidl_default_generators</buildtool_depend>
+<exec_depend>rosidl_default_runtime</exec_depend>
+<member_of_group>rosidl_interface_packages</member_of_group>
+```
+
+- To use the interface, in another package, add the `<exec_depend><package-name></exec_depend>` to the `package.xml` file and import it as `from <interface-name>.msg import <msg-name>` or `from <interface-name>.srv import <srv-name>`.
+
+- The executables from `py_pubsub` and `py_srvcli` were changed to use the `tutorial_interfaces` interface.
+
+- The best practice is to declare interfaces in a dedicated package to be used by other packages, although it is possible to create and use an interface in one package (in this case, [ament_cmake_python](https://github.com/ament/ament_cmake/tree/humble/ament_cmake_python) is a useful package to use Python libraries and nodes in a CMake package).
+</details>
+
+<details><summary>Creating Launch files with custom Parameters</summary>
+
+- Create a `launch` directory in the package, there create the launch files with custom parameters:
+```
+from launch import LaunchDescription
+from launch_ros.actions import Node
+
+def generate_launch_description():
+    return LaunchDescription([
+        Node(
+            package='<package-name>',
+            executable='<executable-name>',
+            name='<custom-executable-name>',
+            output='screen',
+            emulate_tty=True,
+            parameters=[
+                {'<parameter>': '<value>'}
+            ]
+        )
+    ])
+```
+
+- Then, update the `setup.py` file with:
+```
+import os
+from glob import glob
+# ...
+
+setup(
+  # ...
+  data_files=[
+      # ...
+      (os.path.join('share', package_name), glob('launch/*launch.[pxy][yma]*')),
+    ]
+  )
+```
+
+- Build the package and launch the custom executable:
+```
+ros2 launch <package-name> <custom-executable-name>
+```
+
+- The `python_parameters` package has the result from the [tutorial](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Using-Parameters-In-A-Class-Python.html#).
+</details>
+
+<details><summary>Managing Dependencies with rosdep</summary>
+
+- `rosdep` is a tool that identifies and installs the dependencies that it finds in the `package.xml` files.
+```
+rosdep install --from-paths src -y --ignore-src
+```
+or
+```
+rosdep install -i --from-path src --rosdistro humble -y
 ```
 </details>
