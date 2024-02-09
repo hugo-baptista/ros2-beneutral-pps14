@@ -309,7 +309,7 @@ ros2 topic echo <topic-name>
 ```
 </details>
 
-## Building Packages
+### Building Packages
 <details><summary>Errors</summary>
 
 - While building the [examples package](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html), the error `c++: fatal error: Killed signal terminated program cc1plus compilation terminated.` occurred. This indicates that the building process is consuming too many resources, so it had to me aborted. Therefore, I limited the amount of CPU cores that the process had available to 1, using the command:
