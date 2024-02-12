@@ -490,7 +490,39 @@ rosdep install -i --from-path src --rosdistro humble -y
 </details>
 
 # AIML_bag_191223 file
+The `AIML` directory contains the bag file (`AIML_bag_191223`) and the required interfaces (`src > ccpm_msgs`).
 
-## Replaying the bag file and analyzing the data
+<details><summary>Replaying the bag file and viewing the data</summary>
+
+- After building the workspace and sourcing the environment, we can see the bag file's metadata with the command:
+```
+'ros2 bag info AIML_bag_191223
+```
+This displays a lot of information, such as the size of the recording, the duration, the start and end time, the number of messages recorded and a list of the recorded topics, as well as their type of messages.
+
+- Focusing on the `/gps/receive` topic, it uses the interface `ccpm_msgs/msg/GPSMessage`:
+```
+std_msgs/Header header
+float64 latitude
+float64 longitude
+float64 altitude
+float32 accuracy
+float32 speed
+float32 heading
+uint8 tracking
+uint8 gps_fix
+uint8 status
+```
+
+- To see the messages that pass through that topic, first it is needed to start the bag file's replay:
+```
+ros2 bag play AIML_bag_191223 --topics /gps/receive -p
+```
+And then, in a different Command Line, it is needed to echo the topic:
+```
+ros2 topic echo /gps/receive > gps_receive.txt
+```
+Using the `> gps_receive.txt` command, all the messages that pass through that topic are stored in the `gps_receive.txt` file.
+</details>
 
 ## Convert Rosbag file to Pandas dataframe

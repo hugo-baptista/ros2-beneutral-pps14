@@ -5,3 +5,7 @@ tutorial-ws/install
 tutorial-ws/log
 tutorial-ws/src/examples
 tutorial-ws/src/ros_tutorials
+
+AIML/build
+AIML/install
+AIML/log

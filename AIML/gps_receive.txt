@@ -1,0 +1,3090 @@
+header:
+  stamp:
+    sec: 1702987825
+    nanosec: 845256953
+  frame_id: gps
+latitude: 41.1728467
+longitude: -8.679667983333333
+altitude: 34.6
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 105
+---
+header:
+  stamp:
+    sec: 1702987825
+    nanosec: 845256953
+  frame_id: gps
+latitude: 41.1728467
+longitude: -8.679667983333333
+altitude: 34.6
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 105
+---
+header:
+  stamp:
+    sec: 1702987825
+    nanosec: 845256953
+  frame_id: gps
+latitude: 41.1728467
+longitude: -8.679667983333333
+altitude: 34.6
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 105
+---
+header:
+  stamp:
+    sec: 1702987825
+    nanosec: 845256953
+  frame_id: gps
+latitude: 41.1728467
+longitude: -8.679667983333333
+altitude: 34.6
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 105
+---
+header:
+  stamp:
+    sec: 1702987825
+    nanosec: 845256953
+  frame_id: gps
+latitude: 41.1728467
+longitude: -8.679667983333333
+altitude: 34.6
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 105
+---
+header:
+  stamp:
+    sec: 1702987825
+    nanosec: 845256953
+  frame_id: gps
+latitude: 41.1728467
+longitude: -8.679667983333333
+altitude: 34.6
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 105
+---
+header:
+  stamp:
+    sec: 1702987825
+    nanosec: 845256953
+  frame_id: gps
+latitude: 41.1728467
+longitude: -8.679667983333333
+altitude: 34.6
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 105
+---
+header:
+  stamp:
+    sec: 1702987825
+    nanosec: 845256953
+  frame_id: gps
+latitude: 41.1728467
+longitude: -8.679667983333333
+altitude: 34.6
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 105
+---
+header:
+  stamp:
+    sec: 1702987825
+    nanosec: 845256953
+  frame_id: gps
+latitude: 41.1728467
+longitude: -8.679667983333333
+altitude: 34.6
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 105
+---
+header:
+  stamp:
+    sec: 1702987825
+    nanosec: 845256953
+  frame_id: gps
+latitude: 41.1728467
+longitude: -8.679667983333333
+altitude: 34.6
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 105
+---
+header:
+  stamp:
+    sec: 1702987825
+    nanosec: 845256953
+  frame_id: gps
+latitude: 41.1728467
+longitude: -8.679667983333333
+altitude: 34.6
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 105
+---
+header:
+  stamp:
+    sec: 1702987829
+    nanosec: 391419856
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 106
+---
+header:
+  stamp:
+    sec: 1702987829
+    nanosec: 391419856
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 106
+---
+header:
+  stamp:
+    sec: 1702987829
+    nanosec: 391419856
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 106
+---
+header:
+  stamp:
+    sec: 1702987829
+    nanosec: 391419856
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 106
+---
+header:
+  stamp:
+    sec: 1702987829
+    nanosec: 391419856
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 106
+---
+header:
+  stamp:
+    sec: 1702987829
+    nanosec: 391419856
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 106
+---
+header:
+  stamp:
+    sec: 1702987829
+    nanosec: 391419856
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 106
+---
+header:
+  stamp:
+    sec: 1702987829
+    nanosec: 391419856
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 106
+---
+header:
+  stamp:
+    sec: 1702987829
+    nanosec: 391419856
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 106
+---
+header:
+  stamp:
+    sec: 1702987829
+    nanosec: 391419856
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 106
+---
+header:
+  stamp:
+    sec: 1702987829
+    nanosec: 391419856
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 106
+---
+header:
+  stamp:
+    sec: 1702987829
+    nanosec: 391419856
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 106
+---
+header:
+  stamp:
+    sec: 1702987833
+    nanosec: 43239718
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 107
+---
+header:
+  stamp:
+    sec: 1702987833
+    nanosec: 43239718
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 107
+---
+header:
+  stamp:
+    sec: 1702987833
+    nanosec: 43239718
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 107
+---
+header:
+  stamp:
+    sec: 1702987833
+    nanosec: 43239718
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 107
+---
+header:
+  stamp:
+    sec: 1702987833
+    nanosec: 43239718
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 107
+---
+header:
+  stamp:
+    sec: 1702987833
+    nanosec: 43239718
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 107
+---
+header:
+  stamp:
+    sec: 1702987833
+    nanosec: 43239718
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 107
+---
+header:
+  stamp:
+    sec: 1702987833
+    nanosec: 43239718
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 107
+---
+header:
+  stamp:
+    sec: 1702987833
+    nanosec: 43239718
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 107
+---
+header:
+  stamp:
+    sec: 1702987833
+    nanosec: 43239718
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 107
+---
+header:
+  stamp:
+    sec: 1702987833
+    nanosec: 43239718
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 107
+---
+header:
+  stamp:
+    sec: 1702987833
+    nanosec: 43239718
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 107
+---
+header:
+  stamp:
+    sec: 1702987833
+    nanosec: 43239718
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 107
+---
+header:
+  stamp:
+    sec: 1702987833
+    nanosec: 43239718
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 107
+---
+header:
+  stamp:
+    sec: 1702987833
+    nanosec: 43239718
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 107
+---
+header:
+  stamp:
+    sec: 1702987837
+    nanosec: 605481437
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 108
+---
+header:
+  stamp:
+    sec: 1702987837
+    nanosec: 605481437
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 108
+---
+header:
+  stamp:
+    sec: 1702987837
+    nanosec: 605481437
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 108
+---
+header:
+  stamp:
+    sec: 1702987837
+    nanosec: 605481437
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 108
+---
+header:
+  stamp:
+    sec: 1702987837
+    nanosec: 605481437
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 108
+---
+header:
+  stamp:
+    sec: 1702987837
+    nanosec: 605481437
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 108
+---
+header:
+  stamp:
+    sec: 1702987837
+    nanosec: 605481437
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 108
+---
+header:
+  stamp:
+    sec: 1702987837
+    nanosec: 605481437
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 108
+---
+header:
+  stamp:
+    sec: 1702987837
+    nanosec: 605481437
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 108
+---
+header:
+  stamp:
+    sec: 1702987837
+    nanosec: 605481437
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 108
+---
+header:
+  stamp:
+    sec: 1702987837
+    nanosec: 605481437
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 108
+---
+header:
+  stamp:
+    sec: 1702987837
+    nanosec: 605481437
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 108
+---
+header:
+  stamp:
+    sec: 1702987841
+    nanosec: 127348633
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 109
+---
+header:
+  stamp:
+    sec: 1702987841
+    nanosec: 127348633
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 109
+---
+header:
+  stamp:
+    sec: 1702987841
+    nanosec: 127348633
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 109
+---
+header:
+  stamp:
+    sec: 1702987841
+    nanosec: 127348633
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 109
+---
+header:
+  stamp:
+    sec: 1702987841
+    nanosec: 127348633
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 109
+---
+header:
+  stamp:
+    sec: 1702987841
+    nanosec: 127348633
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 109
+---
+header:
+  stamp:
+    sec: 1702987841
+    nanosec: 127348633
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 109
+---
+header:
+  stamp:
+    sec: 1702987841
+    nanosec: 127348633
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 109
+---
+header:
+  stamp:
+    sec: 1702987841
+    nanosec: 127348633
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 109
+---
+header:
+  stamp:
+    sec: 1702987841
+    nanosec: 127348633
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 109
+---
+header:
+  stamp:
+    sec: 1702987841
+    nanosec: 127348633
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 109
+---
+header:
+  stamp:
+    sec: 1702987841
+    nanosec: 127348633
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 109
+---
+header:
+  stamp:
+    sec: 1702987841
+    nanosec: 127348633
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 109
+---
+header:
+  stamp:
+    sec: 1702987845
+    nanosec: 97053321
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 110
+---
+header:
+  stamp:
+    sec: 1702987845
+    nanosec: 97053321
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 110
+---
+header:
+  stamp:
+    sec: 1702987845
+    nanosec: 97053321
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 110
+---
+header:
+  stamp:
+    sec: 1702987845
+    nanosec: 97053321
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 110
+---
+header:
+  stamp:
+    sec: 1702987845
+    nanosec: 97053321
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 110
+---
+header:
+  stamp:
+    sec: 1702987845
+    nanosec: 97053321
+  frame_id: gps
+latitude: 41.17284105
+longitude: -8.679668466666667
+altitude: 33.4
+accuracy: 5.0
+speed: 0.0
+heading: 0.0
+tracking: 5
+gps_fix: 1
+status: 110
+---
+header:
+  stamp:
+    sec: 1702987846
+    nanosec: 930305980
+  frame_id: gps
+latitude: 41.172821166666665
+longitude: -8.6802739
+altitude: 31.6
+accuracy: 8.0
+speed: 11.623563766479492
+heading: 208.6999969482422
+tracking: 8
+gps_fix: 1
+status: 111
+---
+header:
+  stamp:
+    sec: 1702987846
+    nanosec: 930305980
+  frame_id: gps
+latitude: 41.172821166666665
+longitude: -8.6802739
+altitude: 31.6
+accuracy: 8.0
+speed: 11.623563766479492
+heading: 208.6999969482422
+tracking: 8
+gps_fix: 1
+status: 111
+---
+header:
+  stamp:
+    sec: 1702987846
+    nanosec: 930305980
+  frame_id: gps
+latitude: 41.172821166666665
+longitude: -8.6802739
+altitude: 31.6
+accuracy: 8.0
+speed: 11.623563766479492
+heading: 208.6999969482422
+tracking: 8
+gps_fix: 1
+status: 111
+---
+header:
+  stamp:
+    sec: 1702987846
+    nanosec: 930305980
+  frame_id: gps
+latitude: 41.172821166666665
+longitude: -8.6802739
+altitude: 31.6
+accuracy: 8.0
+speed: 11.623563766479492
+heading: 208.6999969482422
+tracking: 8
+gps_fix: 1
+status: 111
+---
+header:
+  stamp:
+    sec: 1702987846
+    nanosec: 930305980
+  frame_id: gps
+latitude: 41.172821166666665
+longitude: -8.6802739
+altitude: 31.6
+accuracy: 8.0
+speed: 11.623563766479492
+heading: 208.6999969482422
+tracking: 8
+gps_fix: 1
+status: 111
+---
+header:
+  stamp:
+    sec: 1702987846
+    nanosec: 930305980
+  frame_id: gps
+latitude: 41.172821166666665
+longitude: -8.6802739
+altitude: 31.6
+accuracy: 8.0
+speed: 11.623563766479492
+heading: 208.6999969482422
+tracking: 8
+gps_fix: 1
+status: 111
+---
+header:
+  stamp:
+    sec: 1702987846
+    nanosec: 930305980
+  frame_id: gps
+latitude: 41.172821166666665
+longitude: -8.6802739
+altitude: 31.6
+accuracy: 8.0
+speed: 11.623563766479492
+heading: 208.6999969482422
+tracking: 8
+gps_fix: 1
+status: 111
+---
+header:
+  stamp:
+    sec: 1702987848
+    nanosec: 880794317
+  frame_id: gps
+latitude: 41.172776383333336
+longitude: -8.680306233333333
+altitude: 31.8
+accuracy: 8.0
+speed: 11.623563766479492
+heading: 208.6999969482422
+tracking: 8
+gps_fix: 1
+status: 112
+---
+header:
+  stamp:
+    sec: 1702987848
+    nanosec: 880794317
+  frame_id: gps
+latitude: 41.172776383333336
+longitude: -8.680306233333333
+altitude: 31.8
+accuracy: 8.0
+speed: 11.623563766479492
+heading: 208.6999969482422
+tracking: 8
+gps_fix: 1
+status: 112
+---
+header:
+  stamp:
+    sec: 1702987848
+    nanosec: 880794317
+  frame_id: gps
+latitude: 41.172776383333336
+longitude: -8.680306233333333
+altitude: 31.8
+accuracy: 8.0
+speed: 11.623563766479492
+heading: 208.6999969482422
+tracking: 8
+gps_fix: 1
+status: 112
+---
+header:
+  stamp:
+    sec: 1702987849
+    nanosec: 919411087
+  frame_id: gps
+latitude: 41.17264478333333
+longitude: -8.680216133333333
+altitude: 32.2
+accuracy: 8.0
+speed: 12.671589851379395
+heading: 164.3000030517578
+tracking: 8
+gps_fix: 1
+status: 113
+---
+header:
+  stamp:
+    sec: 1702987849
+    nanosec: 919411087
+  frame_id: gps
+latitude: 41.17264478333333
+longitude: -8.680216133333333
+altitude: 32.2
+accuracy: 8.0
+speed: 12.671589851379395
+heading: 164.3000030517578
+tracking: 8
+gps_fix: 1
+status: 113
+---
+header:
+  stamp:
+    sec: 1702987849
+    nanosec: 919411087
+  frame_id: gps
+latitude: 41.17264478333333
+longitude: -8.680216133333333
+altitude: 32.2
+accuracy: 8.0
+speed: 12.671589851379395
+heading: 164.3000030517578
+tracking: 8
+gps_fix: 1
+status: 113
+---
+header:
+  stamp:
+    sec: 1702987849
+    nanosec: 919411087
+  frame_id: gps
+latitude: 41.17264478333333
+longitude: -8.680216133333333
+altitude: 32.2
+accuracy: 8.0
+speed: 12.671589851379395
+heading: 164.3000030517578
+tracking: 8
+gps_fix: 1
+status: 113
+---
+header:
+  stamp:
+    sec: 1702987849
+    nanosec: 919411087
+  frame_id: gps
+latitude: 41.17264478333333
+longitude: -8.680216133333333
+altitude: 32.2
+accuracy: 8.0
+speed: 12.671589851379395
+heading: 164.3000030517578
+tracking: 8
+gps_fix: 1
+status: 113
+---
+header:
+  stamp:
+    sec: 1702987849
+    nanosec: 919411087
+  frame_id: gps
+latitude: 41.17264478333333
+longitude: -8.680216133333333
+altitude: 32.2
+accuracy: 8.0
+speed: 12.671589851379395
+heading: 164.3000030517578
+tracking: 8
+gps_fix: 1
+status: 113
+---
+header:
+  stamp:
+    sec: 1702987849
+    nanosec: 919411087
+  frame_id: gps
+latitude: 41.17264478333333
+longitude: -8.680216133333333
+altitude: 32.2
+accuracy: 8.0
+speed: 12.671589851379395
+heading: 164.3000030517578
+tracking: 8
+gps_fix: 1
+status: 113
+---
+header:
+  stamp:
+    sec: 1702987849
+    nanosec: 919411087
+  frame_id: gps
+latitude: 41.17264478333333
+longitude: -8.680216133333333
+altitude: 32.2
+accuracy: 8.0
+speed: 12.671589851379395
+heading: 164.3000030517578
+tracking: 8
+gps_fix: 1
+status: 113
+---
+header:
+  stamp:
+    sec: 1702987849
+    nanosec: 919411087
+  frame_id: gps
+latitude: 41.17264478333333
+longitude: -8.680216133333333
+altitude: 32.2
+accuracy: 8.0
+speed: 12.671589851379395
+heading: 164.3000030517578
+tracking: 8
+gps_fix: 1
+status: 113
+---
+header:
+  stamp:
+    sec: 1702987849
+    nanosec: 919411087
+  frame_id: gps
+latitude: 41.17264478333333
+longitude: -8.680216133333333
+altitude: 32.2
+accuracy: 8.0
+speed: 12.671589851379395
+heading: 164.3000030517578
+tracking: 8
+gps_fix: 1
+status: 113
+---
+header:
+  stamp:
+    sec: 1702987852
+    nanosec: 934764582
+  frame_id: gps
+latitude: 41.17257023333333
+longitude: -8.680202883333333
+altitude: 33.0
+accuracy: 8.0
+speed: 12.671589851379395
+heading: 164.3000030517578
+tracking: 8
+gps_fix: 1
+status: 114
+---
+header:
+  stamp:
+    sec: 1702987852
+    nanosec: 934764582
+  frame_id: gps
+latitude: 41.17257023333333
+longitude: -8.680202883333333
+altitude: 33.0
+accuracy: 8.0
+speed: 12.671589851379395
+heading: 164.3000030517578
+tracking: 8
+gps_fix: 1
+status: 114
+---
+header:
+  stamp:
+    sec: 1702987852
+    nanosec: 934764582
+  frame_id: gps
+latitude: 41.17257023333333
+longitude: -8.680202883333333
+altitude: 33.0
+accuracy: 8.0
+speed: 12.671589851379395
+heading: 164.3000030517578
+tracking: 8
+gps_fix: 1
+status: 114
+---
+header:
+  stamp:
+    sec: 1702987852
+    nanosec: 934764582
+  frame_id: gps
+latitude: 41.17257023333333
+longitude: -8.680202883333333
+altitude: 33.0
+accuracy: 8.0
+speed: 12.671589851379395
+heading: 164.3000030517578
+tracking: 8
+gps_fix: 1
+status: 114
+---
+header:
+  stamp:
+    sec: 1702987852
+    nanosec: 934764582
+  frame_id: gps
+latitude: 41.17257023333333
+longitude: -8.680202883333333
+altitude: 33.0
+accuracy: 8.0
+speed: 12.671589851379395
+heading: 164.3000030517578
+tracking: 8
+gps_fix: 1
+status: 114
+---
+header:
+  stamp:
+    sec: 1702987852
+    nanosec: 934764582
+  frame_id: gps
+latitude: 41.17257023333333
+longitude: -8.680202883333333
+altitude: 33.0
+accuracy: 8.0
+speed: 12.671589851379395
+heading: 164.3000030517578
+tracking: 8
+gps_fix: 1
+status: 114
+---
+header:
+  stamp:
+    sec: 1702987852
+    nanosec: 934764582
+  frame_id: gps
+latitude: 41.17257023333333
+longitude: -8.680202883333333
+altitude: 33.0
+accuracy: 8.0
+speed: 12.671589851379395
+heading: 164.3000030517578
+tracking: 8
+gps_fix: 1
+status: 114
+---
+header:
+  stamp:
+    sec: 1702987855
+    nanosec: 30406297
+  frame_id: gps
+latitude: 41.172364433333335
+longitude: -8.680173283333334
+altitude: 32.8
+accuracy: 7.0
+speed: 13.81489086151123
+heading: 186.3000030517578
+tracking: 7
+gps_fix: 1
+status: 115
+---
+header:
+  stamp:
+    sec: 1702987855
+    nanosec: 30406297
+  frame_id: gps
+latitude: 41.172364433333335
+longitude: -8.680173283333334
+altitude: 32.8
+accuracy: 7.0
+speed: 13.81489086151123
+heading: 186.3000030517578
+tracking: 7
+gps_fix: 1
+status: 115
+---
+header:
+  stamp:
+    sec: 1702987855
+    nanosec: 30406297
+  frame_id: gps
+latitude: 41.172364433333335
+longitude: -8.680173283333334
+altitude: 32.8
+accuracy: 7.0
+speed: 13.81489086151123
+heading: 186.3000030517578
+tracking: 7
+gps_fix: 1
+status: 115
+---
+header:
+  stamp:
+    sec: 1702987855
+    nanosec: 30406297
+  frame_id: gps
+latitude: 41.172364433333335
+longitude: -8.680173283333334
+altitude: 32.8
+accuracy: 7.0
+speed: 13.81489086151123
+heading: 186.3000030517578
+tracking: 7
+gps_fix: 1
+status: 115
+---
+header:
+  stamp:
+    sec: 1702987856
+    nanosec: 16449489
+  frame_id: gps
+latitude: 41.17227425
+longitude: -8.680056583333334
+altitude: 31.9
+accuracy: 6.0
+speed: 12.576314926147461
+heading: 139.3000030517578
+tracking: 6
+gps_fix: 1
+status: 116
+---
+header:
+  stamp:
+    sec: 1702987856
+    nanosec: 16449489
+  frame_id: gps
+latitude: 41.17227425
+longitude: -8.680056583333334
+altitude: 31.9
+accuracy: 6.0
+speed: 12.576314926147461
+heading: 139.3000030517578
+tracking: 6
+gps_fix: 1
+status: 116
+---
+header:
+  stamp:
+    sec: 1702987856
+    nanosec: 16449489
+  frame_id: gps
+latitude: 41.17227425
+longitude: -8.680056583333334
+altitude: 31.9
+accuracy: 6.0
+speed: 12.576314926147461
+heading: 139.3000030517578
+tracking: 6
+gps_fix: 1
+status: 116
+---
+header:
+  stamp:
+    sec: 1702987856
+    nanosec: 999781653
+  frame_id: gps
+latitude: 41.17225776666667
+longitude: -8.679989083333334
+altitude: 32.7
+accuracy: 6.0
+speed: 8.670035362243652
+heading: 138.6999969482422
+tracking: 6
+gps_fix: 1
+status: 117
+---
+header:
+  stamp:
+    sec: 1702987856
+    nanosec: 999781653
+  frame_id: gps
+latitude: 41.17225776666667
+longitude: -8.679989083333334
+altitude: 32.7
+accuracy: 6.0
+speed: 8.670035362243652
+heading: 138.6999969482422
+tracking: 6
+gps_fix: 1
+status: 117
+---
+header:
+  stamp:
+    sec: 1702987856
+    nanosec: 999781653
+  frame_id: gps
+latitude: 41.17225776666667
+longitude: -8.679989083333334
+altitude: 32.7
+accuracy: 6.0
+speed: 8.670035362243652
+heading: 138.6999969482422
+tracking: 6
+gps_fix: 1
+status: 117
+---
+header:
+  stamp:
+    sec: 1702987857
+    nanosec: 968780968
+  frame_id: gps
+latitude: 41.17225665
+longitude: -8.67993905
+altitude: 32.1
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 118
+---
+header:
+  stamp:
+    sec: 1702987857
+    nanosec: 968780968
+  frame_id: gps
+latitude: 41.17225665
+longitude: -8.67993905
+altitude: 32.1
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 118
+---
+header:
+  stamp:
+    sec: 1702987857
+    nanosec: 968780968
+  frame_id: gps
+latitude: 41.17225665
+longitude: -8.67993905
+altitude: 32.1
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 118
+---
+header:
+  stamp:
+    sec: 1702987857
+    nanosec: 968780968
+  frame_id: gps
+latitude: 41.17225665
+longitude: -8.67993905
+altitude: 32.1
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 118
+---
+header:
+  stamp:
+    sec: 1702987857
+    nanosec: 968780968
+  frame_id: gps
+latitude: 41.17225665
+longitude: -8.67993905
+altitude: 32.1
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 118
+---
+header:
+  stamp:
+    sec: 1702987857
+    nanosec: 968780968
+  frame_id: gps
+latitude: 41.17225665
+longitude: -8.67993905
+altitude: 32.1
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 118
+---
+header:
+  stamp:
+    sec: 1702987857
+    nanosec: 968780968
+  frame_id: gps
+latitude: 41.17225665
+longitude: -8.67993905
+altitude: 32.1
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 118
+---
+header:
+  stamp:
+    sec: 1702987857
+    nanosec: 968780968
+  frame_id: gps
+latitude: 41.17225665
+longitude: -8.67993905
+altitude: 32.1
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 118
+---
+header:
+  stamp:
+    sec: 1702987857
+    nanosec: 968780968
+  frame_id: gps
+latitude: 41.17225665
+longitude: -8.67993905
+altitude: 32.1
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 118
+---
+header:
+  stamp:
+    sec: 1702987857
+    nanosec: 968780968
+  frame_id: gps
+latitude: 41.17225665
+longitude: -8.67993905
+altitude: 32.1
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 118
+---
+header:
+  stamp:
+    sec: 1702987857
+    nanosec: 968780968
+  frame_id: gps
+latitude: 41.17225665
+longitude: -8.67993905
+altitude: 32.1
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 118
+---
+header:
+  stamp:
+    sec: 1702987861
+    nanosec: 252842511
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 119
+---
+header:
+  stamp:
+    sec: 1702987861
+    nanosec: 252842511
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 119
+---
+header:
+  stamp:
+    sec: 1702987861
+    nanosec: 252842511
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 119
+---
+header:
+  stamp:
+    sec: 1702987861
+    nanosec: 252842511
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 119
+---
+header:
+  stamp:
+    sec: 1702987861
+    nanosec: 252842511
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 119
+---
+header:
+  stamp:
+    sec: 1702987861
+    nanosec: 252842511
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 119
+---
+header:
+  stamp:
+    sec: 1702987861
+    nanosec: 252842511
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 119
+---
+header:
+  stamp:
+    sec: 1702987861
+    nanosec: 252842511
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 119
+---
+header:
+  stamp:
+    sec: 1702987861
+    nanosec: 252842511
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 119
+---
+header:
+  stamp:
+    sec: 1702987861
+    nanosec: 252842511
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 119
+---
+header:
+  stamp:
+    sec: 1702987861
+    nanosec: 252842511
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 119
+---
+header:
+  stamp:
+    sec: 1702987861
+    nanosec: 252842511
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 119
+---
+header:
+  stamp:
+    sec: 1702987861
+    nanosec: 252842511
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 119
+---
+header:
+  stamp:
+    sec: 1702987865
+    nanosec: 274649851
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 120
+---
+header:
+  stamp:
+    sec: 1702987865
+    nanosec: 274649851
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 120
+---
+header:
+  stamp:
+    sec: 1702987865
+    nanosec: 274649851
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 120
+---
+header:
+  stamp:
+    sec: 1702987865
+    nanosec: 274649851
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 120
+---
+header:
+  stamp:
+    sec: 1702987865
+    nanosec: 274649851
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 120
+---
+header:
+  stamp:
+    sec: 1702987865
+    nanosec: 274649851
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 120
+---
+header:
+  stamp:
+    sec: 1702987865
+    nanosec: 274649851
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 120
+---
+header:
+  stamp:
+    sec: 1702987865
+    nanosec: 274649851
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 120
+---
+header:
+  stamp:
+    sec: 1702987865
+    nanosec: 274649851
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 120
+---
+header:
+  stamp:
+    sec: 1702987865
+    nanosec: 274649851
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 120
+---
+header:
+  stamp:
+    sec: 1702987865
+    nanosec: 274649851
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 120
+---
+header:
+  stamp:
+    sec: 1702987865
+    nanosec: 274649851
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 120
+---
+header:
+  stamp:
+    sec: 1702987865
+    nanosec: 274649851
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 120
+---
+header:
+  stamp:
+    sec: 1702987869
+    nanosec: 209845097
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 121
+---
+header:
+  stamp:
+    sec: 1702987869
+    nanosec: 209845097
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 121
+---
+header:
+  stamp:
+    sec: 1702987869
+    nanosec: 209845097
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 121
+---
+header:
+  stamp:
+    sec: 1702987869
+    nanosec: 209845097
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 121
+---
+header:
+  stamp:
+    sec: 1702987869
+    nanosec: 209845097
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 121
+---
+header:
+  stamp:
+    sec: 1702987869
+    nanosec: 209845097
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 121
+---
+header:
+  stamp:
+    sec: 1702987869
+    nanosec: 209845097
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 121
+---
+header:
+  stamp:
+    sec: 1702987869
+    nanosec: 209845097
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 121
+---
+header:
+  stamp:
+    sec: 1702987869
+    nanosec: 209845097
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 121
+---
+header:
+  stamp:
+    sec: 1702987869
+    nanosec: 209845097
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 121
+---
+header:
+  stamp:
+    sec: 1702987869
+    nanosec: 209845097
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 121
+---
+header:
+  stamp:
+    sec: 1702987869
+    nanosec: 209845097
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 121
+---
+header:
+  stamp:
+    sec: 1702987869
+    nanosec: 209845097
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 121
+---
+header:
+  stamp:
+    sec: 1702987869
+    nanosec: 209845097
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 121
+---
+header:
+  stamp:
+    sec: 1702987873
+    nanosec: 322767136
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 122
+---
+header:
+  stamp:
+    sec: 1702987873
+    nanosec: 322767136
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 122
+---
+header:
+  stamp:
+    sec: 1702987873
+    nanosec: 322767136
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 122
+---
+header:
+  stamp:
+    sec: 1702987873
+    nanosec: 322767136
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 122
+---
+header:
+  stamp:
+    sec: 1702987873
+    nanosec: 322767136
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 122
+---
+header:
+  stamp:
+    sec: 1702987873
+    nanosec: 322767136
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 122
+---
+header:
+  stamp:
+    sec: 1702987873
+    nanosec: 322767136
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 122
+---
+header:
+  stamp:
+    sec: 1702987873
+    nanosec: 322767136
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 122
+---
+header:
+  stamp:
+    sec: 1702987873
+    nanosec: 322767136
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 122
+---
+header:
+  stamp:
+    sec: 1702987873
+    nanosec: 322767136
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 122
+---
+header:
+  stamp:
+    sec: 1702987876
+    nanosec: 150965254
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 123
+---
+header:
+  stamp:
+    sec: 1702987876
+    nanosec: 150965254
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 123
+---
+header:
+  stamp:
+    sec: 1702987876
+    nanosec: 150965254
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 123
+---
+header:
+  stamp:
+    sec: 1702987876
+    nanosec: 150965254
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 123
+---
+header:
+  stamp:
+    sec: 1702987876
+    nanosec: 150965254
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 123
+---
+header:
+  stamp:
+    sec: 1702987876
+    nanosec: 150965254
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 123
+---
+header:
+  stamp:
+    sec: 1702987876
+    nanosec: 150965254
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 123
+---
+header:
+  stamp:
+    sec: 1702987876
+    nanosec: 150965254
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 123
+---
+header:
+  stamp:
+    sec: 1702987876
+    nanosec: 150965254
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 123
+---
+header:
+  stamp:
+    sec: 1702987876
+    nanosec: 150965254
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 123
+---
+header:
+  stamp:
+    sec: 1702987876
+    nanosec: 150965254
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 123
+---
+header:
+  stamp:
+    sec: 1702987876
+    nanosec: 150965254
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 123
+---
+header:
+  stamp:
+    sec: 1702987876
+    nanosec: 150965254
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 123
+---
+header:
+  stamp:
+    sec: 1702987876
+    nanosec: 150965254
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 123
+---
+header:
+  stamp:
+    sec: 1702987880
+    nanosec: 353424932
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 124
+---
+header:
+  stamp:
+    sec: 1702987880
+    nanosec: 353424932
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 124
+---
+header:
+  stamp:
+    sec: 1702987880
+    nanosec: 353424932
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 124
+---
+header:
+  stamp:
+    sec: 1702987880
+    nanosec: 353424932
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 124
+---
+header:
+  stamp:
+    sec: 1702987880
+    nanosec: 353424932
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 124
+---
+header:
+  stamp:
+    sec: 1702987880
+    nanosec: 353424932
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 124
+---
+header:
+  stamp:
+    sec: 1702987880
+    nanosec: 353424932
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 124
+---
+header:
+  stamp:
+    sec: 1702987880
+    nanosec: 353424932
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 124
+---
+header:
+  stamp:
+    sec: 1702987880
+    nanosec: 353424932
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 124
+---
+header:
+  stamp:
+    sec: 1702987880
+    nanosec: 353424932
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 124
+---
+header:
+  stamp:
+    sec: 1702987880
+    nanosec: 353424932
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 124
+---
+header:
+  stamp:
+    sec: 1702987880
+    nanosec: 353424932
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 124
+---
+header:
+  stamp:
+    sec: 1702987880
+    nanosec: 353424932
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 124
+---
+header:
+  stamp:
+    sec: 1702987884
+    nanosec: 395814478
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 125
+---
+header:
+  stamp:
+    sec: 1702987884
+    nanosec: 395814478
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 125
+---
+header:
+  stamp:
+    sec: 1702987884
+    nanosec: 395814478
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 125
+---
+header:
+  stamp:
+    sec: 1702987884
+    nanosec: 395814478
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 125
+---
+header:
+  stamp:
+    sec: 1702987884
+    nanosec: 395814478
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 125
+---
+header:
+  stamp:
+    sec: 1702987884
+    nanosec: 395814478
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 125
+---
+header:
+  stamp:
+    sec: 1702987884
+    nanosec: 395814478
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 125
+---
+header:
+  stamp:
+    sec: 1702987884
+    nanosec: 395814478
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 125
+---
+header:
+  stamp:
+    sec: 1702987884
+    nanosec: 395814478
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 125
+---
+header:
+  stamp:
+    sec: 1702987884
+    nanosec: 395814478
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 125
+---
+header:
+  stamp:
+    sec: 1702987884
+    nanosec: 395814478
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 125
+---
+header:
+  stamp:
+    sec: 1702987884
+    nanosec: 395814478
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 125
+---

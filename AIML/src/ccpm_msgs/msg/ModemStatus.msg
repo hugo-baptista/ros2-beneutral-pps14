@@ -1,0 +1,11 @@
+std_msgs/Header header
+uint64 imei
+char[4] ip_address
+uint16 area_code
+uint16 current_band
+uint16 current_operator
+int32 state
+int32 signal_quality
+string own_number
+string module_manufacturer
+string apn

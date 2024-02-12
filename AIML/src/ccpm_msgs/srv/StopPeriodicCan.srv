@@ -1,0 +1,4 @@
+uint32 id  #CanMessage id of the created periodic thread to be stopped
+---
+bool success # indicate successful run of triggered service
+string message # informational, e.g. for error messages
