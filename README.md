@@ -524,7 +524,24 @@ And then, in a different Command Line, it is needed to echo the topic:
 ```
 ros2 topic echo /gps/receive > gps_receive.txt
 ```
-Using the `> gps_receive.txt` command, all the messages that pass through that topic are stored in the `gps_receive.txt` file.
+Using the `> gps_receive.txt` command, all the messages that pass through that topic are stored in the `gps_receive.txt` file, which have this format:
+```
+header:
+  stamp:
+    sec: 1702987884
+    nanosec: 395814478
+  frame_id: gps
+latitude: 41.17226196666667
+longitude: -8.679851133333333
+altitude: 32.5
+accuracy: 6.0
+speed: 7.240908622741699
+heading: 103.9000015258789
+tracking: 6
+gps_fix: 1
+status: 125
+---
+```
 </details>
 
 ### Convert Rosbag file to Pandas dataframe
