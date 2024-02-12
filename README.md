@@ -1,6 +1,4 @@
-# My ROS2 progress in the Be.Neutral PPS14 project
-
-## ROS2 Tutorial
+# ROS2 Tutorial
 Based on the [ROS 2: Humble Documentation](https://docs.ros.org/en/humble/index.html).
 
 <details><summary>Installation</summary>
@@ -15,7 +13,7 @@ Then, I installed [Ubuntu 22.04.3 LTS](https://apps.microsoft.com/detail/9PN20MS
 Lastly, I followed the steps available on the [ROS 2: Humble Ubuntu (Debian packages) Installation](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html#).
 </details>
 
-### ROS2 Elements
+## ROS2 Elements
 <details><summary>ROS graph, Nodes and Parameters</summary>
 
 The `ROS graph` is a network of ROS 2 elements processing data together at the same time. It encompasses all executables and the connections between them if you were to map them all out and visualize them.
@@ -83,7 +81,7 @@ It's possible to create nodes, parameters, topics, services and actions using ei
 **Only CMake is officially supported to build interfaces**. The **best practice is to declare interfaces in a dedicated package** to be used by other packages, although it is possible to create and use an interface in one package (in this case, [ament_cmake_python](https://github.com/ament/ament_cmake/tree/humble/ament_cmake_python) is a useful package to use Python libraries and nodes in a CMake package).
 </details>
 
-### ROS2 Commands
+## ROS2 Commands
 <details><summary>General Commands</summary>
 
 - View the ROS graph:
@@ -309,7 +307,7 @@ ros2 topic echo <topic-name>
 ```
 </details>
 
-### Building Packages
+## Building Packages
 <details><summary>Errors</summary>
 
 - While building the [examples package](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html), the error `c++: fatal error: Killed signal terminated program cc1plus compilation terminated.` occurred. This indicates that the building process is consuming too many resources, so it had to me aborted. Therefore, I limited the amount of CPU cores that the process had available to 1, using the command:
@@ -491,8 +489,8 @@ rosdep install -i --from-path src --rosdistro humble -y
 ```
 </details>
 
-## AIML_bag_191223 file
+# AIML_bag_191223 file
 
-### Replaying the bag file and analyzing the data
+## Replaying the bag file and analyzing the data
 
-### Convert Rosbag file to Pandas dataframe
+## Convert Rosbag file to Pandas dataframe
