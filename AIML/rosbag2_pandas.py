@@ -8,17 +8,20 @@ from rosbags.highlevel import AnyReader
 from rosbags.typesys import get_types_from_msg, register_types
 
 
+workspace_directory='/home/hugobaptista/ros2/AIML'
+
+
 # Add all topic message types to the reader's registered types
 add_types = {}
-for filename in os.listdir(f'/home/hugobaptista/ros2/AIML/src/ccpm_msgs/msg'):
-    text = Path(f'/home/hugobaptista/ros2/AIML/src/ccpm_msgs/msg/{filename}').read_text()
+for filename in os.listdir(f'{workspace_directory}/src/ccpm_msgs/msg'):
+    text = Path(f'{workspace_directory}/src/ccpm_msgs/msg/{filename}').read_text()
     name=f'ccpm_msgs/msg/{filename.split(".")[0]}'
     add_types.update(get_types_from_msg(text, name))
 register_types(add_types)
 
 
 # Read and convert the topics from the bag file to pandas dataframe
-with AnyReader([Path('/home/hugobaptista/ros2/AIML/AIML_bag_191223')]) as reader:
+with AnyReader([Path(f'{workspace_directory}/AIML_bag_191223')]) as reader:
     # The 'topics' dictionary's keys are the topics names and the values are their arguments (list)
     topics={}
     for connection in reader.connections:
