@@ -498,7 +498,7 @@ The `AIML` directory contains the bag file (`AIML_bag_191223`) and the required 
 
 - After building the workspace and sourcing the environment, we can see the bag file's metadata with the command:
 ```
-'ros2 bag info AIML_bag_191223
+ros2 bag info AIML_bag_191223
 ```
 This displays a lot of information, such as the size of the recording, the duration, the start and end time, the number of messages recorded and a list of the recorded topics, as well as their type of messages.
 
@@ -544,4 +544,44 @@ status: 125
 ```
 </details>
 
-### Convert Rosbag file to Pandas dataframe
+<details><summary>Converting Rosbag to Pandas dataframe</summary>
+
+Despite being possible to save the data in a `.txt` file, like shown before, that format is not practical for analysing the data. Using Python, the Pandas dataframe is way more convenient and there's a Python library called [rosbag_pandas](https://github.com/eurogroep/rosbag_pandas) that converts ROS bagfiles to Pandas dataframes, and it also has 3 useful scripts: `bag_csv`, `bag_plot` and `bag_print`.
+
+After installing this library and trying to run it, the error `ModuleNotFoundError: No module named 'rosbag'` appeared. This shows that `rosbag` is from ROS and not from ROS2, which uses `rosbag2`, so the library is not compatible. As a solution, the [rosbags-dataframe](https://pypi.org/project/rosbags-dataframe/) is a promissing Python library that can read ROS2 bag files and convert them to the Pandas dataframe.
+
+The file `rosbag2_pandas.py` uses that Python library to convert the `AIML_bag_191223` file's topics to their pandas dataframe. However, it can't convert the topics `/motor0/status` and `/motor1/status`.
+
+- The `/motor0/status` gives this error:
+```
+Traceback (most recent call last):
+  File "/home/hugobaptista/ros2/AIML/rosbag2_pandas.py", line 37, in <module>
+    dataframes[topic]=get_dataframe(reader, topic, topics.get(topic))
+  File "/home/hugobaptista/.local/lib/python3.10/site-packages/rosbags/dataframe/dataframe.py", line 102, in get_dataframe
+    msg = reader.deserialize(rawdata, topic.msgtype)
+  File "/home/hugobaptista/.local/lib/python3.10/site-packages/rosbags/highlevel/anyreader.py", line 113, in deserialize
+    return self._deser_ros2(rawdata, typ) if self.is2 else self._deser_ros1(rawdata, typ)
+  File "/home/hugobaptista/.local/lib/python3.10/site-packages/rosbags/highlevel/anyreader.py", line 109, in _deser_ros2
+    return deserialize_cdr(rawdata, typ, self.typestore)
+  File "/home/hugobaptista/.local/lib/python3.10/site-packages/rosbags/serde/serdes.py", line 42, in deserialize_cdr
+    assert pos + 4 + 3 >= len(rawdata)
+AssertionError
+```
+
+- The `/motor1/status` gives this error:
+```
+Traceback (most recent call last):
+  File "/home/hugobaptista/ros2/AIML/rosbag2_pandas.py", line 37, in <module>
+    dataframes[topic]=get_dataframe(reader, topic, topics.get(topic))
+  File "/home/hugobaptista/.local/lib/python3.10/site-packages/rosbags/dataframe/dataframe.py", line 102, in get_dataframe
+    msg = reader.deserialize(rawdata, topic.msgtype)
+  File "/home/hugobaptista/.local/lib/python3.10/site-packages/rosbags/highlevel/anyreader.py", line 113, in deserialize
+    return self._deser_ros2(rawdata, typ) if self.is2 else self._deser_ros1(rawdata, typ)
+  File "/home/hugobaptista/.local/lib/python3.10/site-packages/rosbags/highlevel/anyreader.py", line 109, in _deser_ros2
+    return deserialize_cdr(rawdata, typ, self.typestore)
+  File "/home/hugobaptista/.local/lib/python3.10/site-packages/rosbags/serde/serdes.py", line 41, in deserialize_cdr
+    message, pos = func(rawdata[4:], 0, msgdef.cls, typestore)
+  File "<string>", line 55, in deserialize_cdr
+struct.error: unpack_from requires a buffer of at least 77 bytes for unpacking 1 bytes at offset 76 (actual buffer size is 76)
+```
+</details>
