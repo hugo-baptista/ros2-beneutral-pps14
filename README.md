@@ -522,7 +522,7 @@ ros2 bag play AIML_bag_191223 --topics /gps/receive -p
 ```
 And then, in a different Command Line, it is needed to echo the topic:
 ```
-ros2 topic echo /gps/receive > gps_receive.txt
+ros2 topic echo /gps/receive > txt/gps_receive.txt
 ```
 Using the `> gps_receive.txt` command, all the messages that pass through that topic are stored in the `gps_receive.txt` file, which have this format:
 ```
@@ -550,7 +550,7 @@ Despite being possible to save the data in a `.txt` file, like shown before, tha
 
 After installing this library and trying to run it, the error `ModuleNotFoundError: No module named 'rosbag'` appeared. This shows that `rosbag` is from ROS and not from ROS2, which uses `rosbag2`, so the library is not compatible. As a solution, the [rosbags-dataframe](https://pypi.org/project/rosbags-dataframe/) is a promissing Python library that can read ROS2 bag files and convert them to the Pandas dataframe.
 
-The file `rosbag2_pandas.py` uses that Python library to convert the `AIML_bag_191223` file's topics to their pandas dataframe. However, it can't convert the topics `/motor0/status` and `/motor1/status`.
+The file `rosbag2_pandas.py` uses that Python library to convert the `AIML_bag_191223` file's topics to their Pandas dataframe. However, it can't convert the topics `/motor0/status` and `/motor1/status`.
 
 - The `/motor0/status` gives this error:
 ```
@@ -584,4 +584,11 @@ Traceback (most recent call last):
   File "<string>", line 55, in deserialize_cdr
 struct.error: unpack_from requires a buffer of at least 77 bytes for unpacking 1 bytes at offset 76 (actual buffer size is 76)
 ```
+</details>
+
+<details><summary>Converting Rosbag to CVS</summary>
+
+The file `rosbag2_csv.py` builds upon the previous code (`rosbag2_pandas.py`) to save the Pandas dataframes as `csv` files, saved in the `AIML > csv` directory.
+
+Because it wasn't possible to convert the `/motor0/status` and `/motor1/status` topics to the Pandas dataframe, their csv are also missing.
 </details>
