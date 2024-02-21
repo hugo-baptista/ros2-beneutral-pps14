@@ -1,5 +1,0 @@
-{
-    "python.analysis.extraPaths": [
-        "./AIML/install/ccpm_msgs/local/lib/python3.10/dist-packages"
-    ]
-}
