@@ -1,4 +1,5 @@
 ros2.code-workspace
+.vscode
 
 tutorial-ws/build
 tutorial-ws/install
@@ -12,3 +13,4 @@ AIML/log
 
 AIML/test.py
 AIML/rptest.py
+AIML/test.ipynb
