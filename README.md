@@ -550,45 +550,89 @@ Despite being possible to save the data in a `.txt` file, like shown before, tha
 
 After installing this library and trying to run it, the error `ModuleNotFoundError: No module named 'rosbag'` appeared. This shows that `rosbag` is from ROS and not from ROS2, which uses `rosbag2`, so the library is not compatible. As a solution, the [rosbags-dataframe](https://pypi.org/project/rosbags-dataframe/) is a promissing Python library that can read ROS2 bag files and convert them to the Pandas dataframe.
 
-The file `rosbag2_pandas.py` uses that Python library to convert the `AIML_bag_191223` file's topics to their Pandas dataframe. However, it can't convert the topics `/motor0/status` and `/motor1/status`.
+The file `rosbag2_converter.ipynb` uses that Python library to convert the `AIML_bag_191223` file's topics to their Pandas dataframe. However, it can't convert the topics `/motor0/status` and `/motor1/status`.
 
 - The `/motor0/status` gives this error:
 ```
-Traceback (most recent call last):
-  File "/home/hugobaptista/ros2/AIML/rosbag2_pandas.py", line 37, in <module>
-    dataframes[topic]=get_dataframe(reader, topic, topics.get(topic))
-  File "/home/hugobaptista/.local/lib/python3.10/site-packages/rosbags/dataframe/dataframe.py", line 102, in get_dataframe
-    msg = reader.deserialize(rawdata, topic.msgtype)
-  File "/home/hugobaptista/.local/lib/python3.10/site-packages/rosbags/highlevel/anyreader.py", line 113, in deserialize
-    return self._deser_ros2(rawdata, typ) if self.is2 else self._deser_ros1(rawdata, typ)
-  File "/home/hugobaptista/.local/lib/python3.10/site-packages/rosbags/highlevel/anyreader.py", line 109, in _deser_ros2
-    return deserialize_cdr(rawdata, typ, self.typestore)
-  File "/home/hugobaptista/.local/lib/python3.10/site-packages/rosbags/serde/serdes.py", line 42, in deserialize_cdr
-    assert pos + 4 + 3 >= len(rawdata)
-AssertionError
+---------------------------------------------------------------------------
+AssertionError                            Traceback (most recent call last)
+Cell In[2], line 17
+     15     # The 'dataframes' dictionary's keys are the topics names and the values are their pandas dataframe
+     16     for topic in topics:
+---> 17         dataframes[topic]=get_dataframe(reader, topic, topics.get(topic))
+     19 for topic in dataframes:
+     20     print(f'Topic: {topic}\nDataframe:{dataframes[topic].head}\n-----------------------------------------\n')
+
+File ~/.local/lib/python3.10/site-packages/rosbags/dataframe/dataframe.py:102, in get_dataframe(reader, topicname, keys)
+    100 data = []
+    101 for _, timestamp, rawdata in reader.messages(connections=topic.connections):
+--> 102     msg = reader.deserialize(rawdata, topic.msgtype)
+    103     timestamps.append(timestamp)
+    104     data.append([x(msg) for x in getters])
+
+File ~/.local/lib/python3.10/site-packages/rosbags/highlevel/anyreader.py:113, in AnyReader.deserialize(self, rawdata, typ)
+    111 def deserialize(self, rawdata: bytes, typ: str) -> object:
+    112     """Deserialize message with appropriate helper."""
+--> 113     return self._deser_ros2(rawdata, typ) if self.is2 else self._deser_ros1(rawdata, typ)
+
+File ~/.local/lib/python3.10/site-packages/rosbags/highlevel/anyreader.py:109, in AnyReader._deser_ros2(self, rawdata, typ)
+    107 def _deser_ros2(self, rawdata: bytes, typ: str) -> object:
+    108     """Deserialize CDR message."""
+--> 109     return deserialize_cdr(rawdata, typ, self.typestore)
+
+File ~/.local/lib/python3.10/site-packages/rosbags/serde/serdes.py:42, in deserialize_cdr(rawdata, typename, typestore)
+     40 func = msgdef.deserialize_cdr_le if little_endian else msgdef.deserialize_cdr_be
+     41 message, pos = func(rawdata[4:], 0, msgdef.cls, typestore)
+---> 42 assert pos + 4 + 3 >= len(rawdata)
+     43 return message
 ```
 
 - The `/motor1/status` gives this error:
 ```
-Traceback (most recent call last):
-  File "/home/hugobaptista/ros2/AIML/rosbag2_pandas.py", line 37, in <module>
-    dataframes[topic]=get_dataframe(reader, topic, topics.get(topic))
-  File "/home/hugobaptista/.local/lib/python3.10/site-packages/rosbags/dataframe/dataframe.py", line 102, in get_dataframe
-    msg = reader.deserialize(rawdata, topic.msgtype)
-  File "/home/hugobaptista/.local/lib/python3.10/site-packages/rosbags/highlevel/anyreader.py", line 113, in deserialize
-    return self._deser_ros2(rawdata, typ) if self.is2 else self._deser_ros1(rawdata, typ)
-  File "/home/hugobaptista/.local/lib/python3.10/site-packages/rosbags/highlevel/anyreader.py", line 109, in _deser_ros2
-    return deserialize_cdr(rawdata, typ, self.typestore)
-  File "/home/hugobaptista/.local/lib/python3.10/site-packages/rosbags/serde/serdes.py", line 41, in deserialize_cdr
-    message, pos = func(rawdata[4:], 0, msgdef.cls, typestore)
-  File "<string>", line 55, in deserialize_cdr
-struct.error: unpack_from requires a buffer of at least 77 bytes for unpacking 1 bytes at offset 76 (actual buffer size is 76)
+---------------------------------------------------------------------------
+error                                     Traceback (most recent call last)
+Cell In[3], line 17
+     13     # topics.pop('/motor1/status')
+     14 
+     15     # The 'dataframes' dictionary's keys are the topics names and the values are their pandas dataframe
+     16     for topic in topics:
+---> 17         dataframes[topic]=get_dataframe(reader, topic, topics.get(topic))
+     19 for topic in dataframes:
+     20     print(f'Topic: {topic}\nDataframe:{dataframes[topic].head}\n-----------------------------------------\n')
+
+File ~/.local/lib/python3.10/site-packages/rosbags/dataframe/dataframe.py:102, in get_dataframe(reader, topicname, keys)
+    100 data = []
+    101 for _, timestamp, rawdata in reader.messages(connections=topic.connections):
+--> 102     msg = reader.deserialize(rawdata, topic.msgtype)
+    103     timestamps.append(timestamp)
+    104     data.append([x(msg) for x in getters])
+
+File ~/.local/lib/python3.10/site-packages/rosbags/highlevel/anyreader.py:113, in AnyReader.deserialize(self, rawdata, typ)
+    111 def deserialize(self, rawdata: bytes, typ: str) -> object:
+    112     """Deserialize message with appropriate helper."""
+--> 113     return self._deser_ros2(rawdata, typ) if self.is2 else self._deser_ros1(rawdata, typ)
+
+File ~/.local/lib/python3.10/site-packages/rosbags/highlevel/anyreader.py:109, in AnyReader._deser_ros2(self, rawdata, typ)
+    107 def _deser_ros2(self, rawdata: bytes, typ: str) -> object:
+    108     """Deserialize CDR message."""
+--> 109     return deserialize_cdr(rawdata, typ, self.typestore)
+
+File ~/.local/lib/python3.10/site-packages/rosbags/serde/serdes.py:41, in deserialize_cdr(rawdata, typename, typestore)
+     39 msgdef = get_msgdef(typename, typestore)
+     40 func = msgdef.deserialize_cdr_le if little_endian else msgdef.deserialize_cdr_be
+---> 41 message, pos = func(rawdata[4:], 0, msgdef.cls, typestore)
+     42 assert pos + 4 + 3 >= len(rawdata)
+     43 return message
+
+File <string>:55, in deserialize_cdr(rawdata, pos, cls, typestore)
+
+error: unpack_from requires a buffer of at least 77 bytes for unpacking 1 bytes at offset 76 (actual buffer size is 76)
 ```
 </details>
 
 <details><summary>Converting Rosbag to CVS</summary>
 
-The file `rosbag2_csv.py` builds upon the previous code (`rosbag2_pandas.py`) to save the Pandas dataframes as `csv` files, saved in the `AIML > csv` directory.
+The file `rosbag2_converter.ipynb` uses the previous code to save the Pandas dataframes as `csv` files, saved in the `AIML > csv` directory.
 
 Because it wasn't possible to convert the `/motor0/status` and `/motor1/status` topics to the Pandas dataframe, their csv are also missing.
 </details>
