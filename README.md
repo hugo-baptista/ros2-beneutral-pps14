@@ -587,6 +587,8 @@ File ~/.local/lib/python3.10/site-packages/rosbags/serde/serdes.py:42, in deseri
      43 return message
 ```
 
+This error indicates that pos (the current deserialization position in bytes) + 4 + 3 is lower than the length of the rawdata (the 4 and 3 are probably the size of the header or other bytes like that). After investigating, this occurs in the 35666th message of that topic, in which the rawdata has a lenght of 84, but the pos is 73, while the pos of all the other messages is 77.
+
 - The `/motor1/status` gives this error:
 ```
 ---------------------------------------------------------------------------
@@ -628,6 +630,8 @@ File <string>:55, in deserialize_cdr(rawdata, pos, cls, typestore)
 
 error: unpack_from requires a buffer of at least 77 bytes for unpacking 1 bytes at offset 76 (actual buffer size is 76)
 ```
+
+This indicates that there is an error in the deserialization process, attempting to unpack a buffer of 76 bytes where it should have at least 77 bytes.
 </details>
 
 <details><summary>Converting Rosbag to CVS</summary>
