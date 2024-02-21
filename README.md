@@ -631,7 +631,7 @@ File <string>:55, in deserialize_cdr(rawdata, pos, cls, typestore)
 error: unpack_from requires a buffer of at least 77 bytes for unpacking 1 bytes at offset 76 (actual buffer size is 76)
 ```
 
-This indicates that there is an error in the deserialization process, attempting to unpack a buffer of 76 bytes where it should have at least 77 bytes.
+This indicates that there is an error in the deserialization process in the 27040th message of that topic, when attempting to unpack a buffer of 76 bytes where it should have at least 77 bytes.
 </details>
 
 <details><summary>Converting Rosbag to CVS</summary>
