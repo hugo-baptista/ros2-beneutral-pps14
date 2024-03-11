@@ -675,7 +675,7 @@ Then, the Pandas dataframes are saved as CSV files in the `AIML > csv` directory
 ## IMU-rosbag_11032024 file
 The `IMU` directory contains the bag file (`IMU-rosbag_11032024`) and the required interfaces (`src > ccpm_msgs`).
 
-<details><summary>Converting Rosbag to Pandas dataframe and CSV</summary>
+<details><summary>Convert to Pandas dataframe and CSV</summary>
 
 The same process that was done to the `AIML_bag_191223` file was done to `IMU-rosbag_11032024`, converting the bag file to the Pandas dataframe and then to CSV files.
 
