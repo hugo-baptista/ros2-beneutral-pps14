@@ -18,3 +18,5 @@ AIML/test.ipynb
 IMU/build
 IMU/install
 IMU/log
+
+IMU/test.py

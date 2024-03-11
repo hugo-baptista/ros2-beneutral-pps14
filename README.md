@@ -10,7 +10,7 @@ First, I installed `WSL` using `Windows PowerShell`, opening it as administrator
 wsl --install
 ```
 
-Then, I installed [Ubuntu 22.04.3 LTS](https://apps.microsoft.com/detail/9PN20MSR04DW?hl=en-us&gl=US), opened and configured it.
+Then, I installed [Ubuntu 22.04.3 LTS](https://apps.microsoft.com/detail/9PN20MSR04DW?hl=en-us&gl=US), opened it, and configured it.
 
 Lastly, I followed the steps available on the [ROS 2: Humble Ubuntu (Debian packages) Installation](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html#).
 </details>
@@ -680,4 +680,9 @@ The `IMU` directory contains the bag file (`IMU-rosbag_11032024`) and the requir
 The same process that was done to the `AIML_bag_191223` file was done to `IMU-rosbag_11032024`, converting the bag file to the Pandas dataframe and then to CSV files.
 
 But while the `AIML_bag_191223` only had 6 messages that were not converted due to errors, the `IMU-rosbag_11032024` has 25 (all on the `/motor0/status` topic, which has a total of 562209 messages in the bag file).
+</details>
+
+<details><summary>Listener and converter nodes</summary>
+
+Based on the `tutorial-ws > src > py_pubsub > py_pubsub > subscriber_member_function.py` node present in the `py_pubsub` package, built on the `tutorial-ws`, the packages `listeners` and `converters` have nodes listen to the `IMU-rosbag_11032024`'s topics and converts them one message at a time to CSV files in the `IMU > csv_nodes` directory, respectively.
 </details>
