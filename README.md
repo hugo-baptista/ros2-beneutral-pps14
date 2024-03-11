@@ -679,5 +679,5 @@ The `IMU` directory contains the bag file (`IMU-rosbag_11032024`) and the requir
 
 The same process that was done to the `AIML_bag_191223` file was done to `IMU-rosbag_11032024`, converting the bag file to the Pandas dataframe and then to CSV files.
 
-But while the `AIML_bag_191223` only had 6 messages that were not converted due to errors, the `IMU-rosbag_11032024` has 25 (all on the `/motor0/status` topic).
+But while the `AIML_bag_191223` only had 6 messages that were not converted due to errors, the `IMU-rosbag_11032024` has 25 (all on the `/motor0/status` topic, which has a total of 562209 messages in the bag file).
 </details>
