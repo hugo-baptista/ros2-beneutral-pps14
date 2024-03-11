@@ -544,15 +544,15 @@ status: 125
 ```
 </details>
 
-<details><summary>Converting Rosbag to Pandas dataframe</summary>
+<details><summary>Converting Rosbag to Pandas dataframe and CSV</summary>
 
 Despite being possible to save the data in a `.txt` file, like shown before, that format is not practical for analysing the data. Using Python, the Pandas dataframe is way more convenient and there's a Python library called [rosbag_pandas](https://github.com/eurogroep/rosbag_pandas) that converts ROS bagfiles to Pandas dataframes, and it also has 3 useful scripts: `bag_csv`, `bag_plot` and `bag_print`.
 
-After installing this library and trying to run it, the error `ModuleNotFoundError: No module named 'rosbag'` appeared. This shows that `rosbag` is from ROS and not from ROS2, which uses `rosbag2`, so the library is not compatible. As a solution, the [rosbags-dataframe](https://pypi.org/project/rosbags-dataframe/) is a promissing Python library that can read ROS2 bag files and convert them to the Pandas dataframe.
+After installing this library and trying to run it, the error `ModuleNotFoundError: No module named 'rosbag'` appeared. This shows that `rosbag` is from ROS and not from ROS2, which uses `rosbag2`, so the library is not compatible. As a solution, the [rosbags-dataframe](https://pypi.org/project/rosbags-dataframe/) is a promising Python library that can read ROS2 bag files and convert them to the Pandas dataframe.
 
-The file `rosbag2_converter.ipynb` uses that Python library to convert the `AIML_bag_191223` file's topics to their Pandas dataframe. However, it can't convert the topics `/motor0/status` and `/motor1/status`.
+The file `rosbag2_converter.ipynb` uses that Python library to convert the `AIML_bag_191223` file's topics to their Pandas dataframe. However, the topics `/motor0/status` and `/motor1/status` had some issues.
 
-- The `/motor0/status` gives this error:
+- The `/motor0/status` had this error:
 ```
 ---------------------------------------------------------------------------
 AssertionError                            Traceback (most recent call last)
@@ -587,9 +587,9 @@ File ~/.local/lib/python3.10/site-packages/rosbags/serde/serdes.py:42, in deseri
      43 return message
 ```
 
-This error indicates that pos (the current deserialization position in bytes) + 4 + 3 is lower than the length of the rawdata (the 4 and 3 are probably the size of the header or other bytes like that). After investigating, this occurs in the 35666th message of that topic, in which the rawdata has a lenght of 84, but the pos is 73, while the pos of all the other messages is 77.
+This error indicates that pos (the current deserialization position in bytes) + 4 + 3 is lower than the length of the rawdata (the 4 and 3 are probably the size of the header or other bytes like that).
 
-- The `/motor1/status` gives this error:
+- The `/motor1/status` had this error:
 ```
 ---------------------------------------------------------------------------
 error                                     Traceback (most recent call last)
@@ -631,12 +631,43 @@ File <string>:55, in deserialize_cdr(rawdata, pos, cls, typestore)
 error: unpack_from requires a buffer of at least 77 bytes for unpacking 1 bytes at offset 76 (actual buffer size is 76)
 ```
 
-This indicates that there is an error in the deserialization process in the 27040th message of that topic, when attempting to unpack a buffer of 76 bytes where it should have at least 77 bytes.
-</details>
+This indicates that there is an error in the deserialization process on one message of that topic, when attempting to unpack a buffer of 76 bytes where it should have at least 77 bytes.
 
-<details><summary>Converting Rosbag to CVS</summary>
+To solve this problem, I changed the code from the line 101 of the `rosbags/dataframe/dataframe.py` file from:
+```
+for _, timestamp, rawdata in reader.messages(connections=topic.connections):
+    msg = reader.deserialize(rawdata, topic.msgtype)
+    timestamps.append(timestamp)
+    data.append([x(msg) for x in getters])
+```
+to:
+```
+msgnum=0
+for _, timestamp, rawdata in reader.messages(connections=topic.connections):
+    msgnum=msgnum+1
+    try:
+        msg = reader.deserialize(rawdata, topic.msgtype)
+        timestamps.append(timestamp)
+        data.append([x(msg) for x in getters])
+    except Exception as e:
+        print(f'There was an error in the message #{msgnum} of {topicname}:\n{e}')
+```
 
-The file `rosbag2_converter.ipynb` uses the previous code to save the Pandas dataframes as `csv` files, saved in the `AIML > csv` directory.
+This makes it so that when there's an error deserializing a message, it gets ignored. This way, it is possible to convert the topics `/motor0/status` and `/motor1/status` to the Pandas dataframe with only 1 message missing from `/motor0/status` and 5 from `/motor1/status`, as shown here (since the topics have 102401 message each, 1 or 5 messages missing is not serious for analysing the data):
+```
+There was an error in the message #35665 of /motor0/status:
 
-Because it wasn't possible to convert the `/motor0/status` and `/motor1/status` topics to the Pandas dataframe, their csv are also missing.
+There was an error in the message #27041 of /motor1/status:
+unpack_from requires a buffer of at least 77 bytes for unpacking 1 bytes at offset 76 (actual buffer size is 76)
+There was an error in the message #38194 of /motor1/status:
+unpack_from requires a buffer of at least 77 bytes for unpacking 1 bytes at offset 76 (actual buffer size is 76)
+There was an error in the message #38344 of /motor1/status:
+unpack_from requires a buffer of at least 77 bytes for unpacking 1 bytes at offset 76 (actual buffer size is 76)
+There was an error in the message #78227 of /motor1/status:
+unpack_from requires a buffer of at least 77 bytes for unpacking 1 bytes at offset 76 (actual buffer size is 76)
+There was an error in the message #83292 of /motor1/status:
+unpack_from requires a buffer of at least 77 bytes for unpacking 1 bytes at offset 76 (actual buffer size is 76)
+```
+
+Then, the Pandas dataframes are saved as `csv` files in the `AIML > csv` directory.
 </details>
