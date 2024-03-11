@@ -684,5 +684,5 @@ But while the `AIML_bag_191223` only had 6 messages that were not converted due 
 
 <details><summary>Listener and converter nodes</summary>
 
-Based on the `tutorial-ws > src > py_pubsub > py_pubsub > subscriber_member_function.py` node present in the `py_pubsub` package, built on the `tutorial-ws`, the packages `listeners` and `converters` have nodes listen to the `IMU-rosbag_11032024`'s topics and converts them one message at a time to CSV files in the `IMU > csv_nodes` directory, respectively.
+Based on the `subscriber_member_function.py` node present in the `py_pubsub` package, built on the `tutorial-ws`, the packages `listeners` and `converters` have nodes listen to the `IMU-rosbag_11032024`'s topics and converts them one message at a time to CSV files in the `IMU > csv_nodes` directory, respectively.
 </details>
