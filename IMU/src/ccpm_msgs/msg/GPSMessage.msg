@@ -1,0 +1,10 @@
+std_msgs/Header header
+float64 latitude
+float64 longitude
+float64 altitude
+float32 accuracy
+float32 speed
+float32 heading
+uint8 tracking
+uint8 gps_fix
+uint8 status

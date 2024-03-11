@@ -1,0 +1,6 @@
+string session_cmd
+---
+bool success
+string reason
+---
+string feedback

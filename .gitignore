@@ -14,3 +14,7 @@ AIML/log
 AIML/test.py
 AIML/rptest.py
 AIML/test.ipynb
+
+IMU/build
+IMU/install
+IMU/log

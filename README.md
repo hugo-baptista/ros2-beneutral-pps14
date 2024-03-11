@@ -20,9 +20,9 @@ Lastly, I followed the steps available on the [ROS 2: Humble Ubuntu (Debian pack
 
 The `ROS graph` is a network of ROS 2 elements processing data together at the same time. It encompasses all executables and the connections between them if you were to map them all out and visualize them.
 
-Each `node` in ROS should be **responsible for a single, modular purpose**, e.g. controlling the wheel motors or publishing the sensor data from a laser range-finder. Each node can send and receive data from other nodes via topics, services or actions.
+Each `node` in ROS should be **responsible for a single, modular purpose**, e.g. controlling the wheel motors or publishing the sensor data from a laser range-finder. Each node can send and receive data from other nodes via topics, services, or actions.
 
-A `parameter` is a configuration value of a node. You can think of parameters as **node settings**. A node can store parameters as integers, floats, booleans, strings, and lists. In ROS 2, each node maintains its own parameters.
+A `parameter` is a configuration value of a node. You can think of parameters as **node settings**. A node can store parameters as integers, floats, Booleans, strings, and lists. In ROS 2, each node maintains its parameters.
 
 ![ROS graph with nodes](https://github.com/hugo-baptista/images-and-gifs/blob/main/ros2/nodes.gif)
 </details>
@@ -43,16 +43,16 @@ A `parameter` is a configuration value of a node. You can think of parameters as
 
 <details><summary>Actions</summary>
 
-`Actions` are one of the communication types in ROS 2, they use the **client-server model** and are **intended for long running tasks**. They are built on topics and services, consisting of three parts: a goal (service), feedback (topic), and a result (service). These elements allow actions to **provide steady feedback** like topics, **provide data only when they are called** like services, and **allow them to be cancelled**. An “action client” node sends a goal to an “action server” node that acknowledges the goal and returns a stream of feedback and a result.
+`Actions` are one of the communication types in ROS 2, they use the **client-server model** and are **intended for long-running tasks**. They are built on topics and services, consisting of three parts: a goal (service), feedback (topic), and a result (service). These elements allow actions to **provide steady feedback** like topics, **provide data only when they are called** like services, and **allow them to be canceled**. An “action client” node sends a goal to an “action server” node that acknowledges the goal and returns a stream of feedback and a result.
 
 ![ROS graph with nodes communicating through a topic](https://github.com/hugo-baptista/images-and-gifs/blob/main/ros2/action.gif)
 </details>
 
 <details><summary>Interfaces</summary>
 
-`Interfaces` are the message structures that nodes use to communicate with each other, either through topics, services or actions. While **it’s good practice to use predefined interface definitions**, sometimes there's a need to create custom interfaces.
+`Interfaces` are the message structures that nodes use to communicate with each other, either through topics, services, or actions. While **it’s good practice to use predefined interface definitions**, sometimes there's a need to create custom interfaces.
 
-Each communication type has its own interface files: topics use `.msg`, services `.srv` and actions `.action`. The structure of these files are:
+Each communication type has its interface files: topics use `.msg`, services `.srv`, and actions `.action``. The structure of these files is as follows:
 - `.msg`:
 ```
 <variable-types> <variable-names>
@@ -78,7 +78,7 @@ Each communication type has its own interface files: topics use `.msg`, services
 
 `Packages` are the organizational units of the ROS 2 code. Package creation in ROS 2 uses `ament` as its build system and `colcon` as its build tool. **They allow users to install their code and share it** with others easily.
 
-It's possible to create nodes, parameters, topics, services and actions using either **Python or CMake**, which are officially supported but there are other build types created by the community.
+It's possible to create nodes, parameters, topics, services, and actions using either **Python or CMake**, which are officially supported but there are other build types created by the community.
 
 **Only CMake is officially supported to build interfaces**. The **best practice is to declare interfaces in a dedicated package** to be used by other packages, although it is possible to create and use an interface in one package (in this case, [ament_cmake_python](https://github.com/ament/ament_cmake/tree/humble/ament_cmake_python) is a useful package to use Python libraries and nodes in a CMake package).
 </details>
@@ -312,12 +312,12 @@ ros2 topic echo <topic-name>
 ### Building Packages
 <details><summary>Errors</summary>
 
-- While building the [examples package](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html), the error `c++: fatal error: Killed signal terminated program cc1plus compilation terminated.` occurred. This indicates that the building process is consuming too many resources, so it had to me aborted. Therefore, I limited the amount of CPU cores that the process had available to 1, using the command:
+- While building the [examples package](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html), the error `c++: fatal error: Killed signal terminated program cc1plus compilation terminated.` occurred. This indicates that the building process is consuming too many resources, so it has to be aborted. Therefore, I limited the amount of CPU cores that the process had available to 1, using the command:
 ```
 export MAKEFLAGS="-j1"
 ```
 
-- Couldn't setup the [colcon_cd](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html#setup-colcon-cd) and the [colcon tab completion](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html#setup-colcon-tab-completion).
+- Couldn't set up the [colcon_cd](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html#setup-colcon-cd) and the [colcon tab completion](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html#setup-colcon-tab-completion).
 </details>
 
 <details><summary>Creating a Workspace</summary>
@@ -340,7 +340,7 @@ or
 ```
 colcon build --symlink-install --packages-select [<package-names>]
 ```
-Usually the built artifacts (executables, libraries, etc.) are copied to the install space. But the `--symlink-install` option creates symbolic links (symlinks) to the build space instead of copying the files.
+Usually, the built artifacts (executables, libraries, etc.) are copied to the install space. But the `--symlink-install` option creates symbolic links (symlinks) to the build space instead of copying the files.
 
 This is useful in development scenarios where changes in the source code immediately affect the installed files without the need to rebuild and reinstall. This may, however, have implications for distribution and deployment, so it's important to consider the context and requirements of the specific use case.
 
@@ -364,21 +364,21 @@ source install/setup.bash
 ros2 pkg create --build-type ament_python --license Apache-2.0 <package-name>
 ```
 
-- Update the fields `maintainer`, `maintainer_email`, `description` and `license` from the `package.xml` and `setup.py` files (they have to be the same in both of them).
+- Update the fields `maintainer`, `maintainer_email`, `description`, and `license` from the `package.xml` and `setup.py` files (they have to be the same in both of them).
 
-- Every time a executable is created or removed (from the `<package-name>` directory), it is necessary to update the [dependencies](https://docs.ros.org/en/humble/Tutorials/Intermediate/Rosdep.html) in the `package.xml` file and add the executable to `setup.py > entry_points > console_scripts` as `'<executable-name> = <package-name>.<file-name>:main',`  (here, `<executable-name>` is the name that ROS will recognize and `<file-name>` is the `.py` file).
+- Every time an executable is created or removed (from the `<package-name>` directory), it is necessary to update the [dependencies](https://docs.ros.org/en/humble/Tutorials/Intermediate/Rosdep.html) in the `package.xml` file and add the executable to `setup.py > entry_points > console_scripts` as `'<executable-name> = <package-name>.<file-name>:main',`  (here, `<executable-name>` is the name that ROS will recognize and `<file-name>` is the `.py` file).
 
-- The `my_package`, `py_pubsub`, `py_srvcli` and `py_action` packages have executables that write `Hello World` in the Command Prompt, that communicate through a `topic`, that communicate through a `service` and that communicate through an `action`, respectively.
+- The `my_package`, `py_pubsub`, `py_srvcli`, and `py_action` packages have executables that write `Hello World` in the Command Prompt, that communicate through a `topic`, that communicate through a `service`, and that communicate through an `action`, respectively.
 </details>
 
-<details><summary>Creating an Interface Package (.msg, .srv and .action)</summary>
+<details><summary>Creating an Interface Package (.msg, .srv, and .action)</summary>
 
 - Create a CMake package:
 ```
 ros2 pkg create --build-type ament_cmake --license Apache-2.0 <interface-name>
 ```
 
-- In the package's directory, create 3 subdirectories (`msg`, `srv` and `action`):
+- In the package's directory, create 3 subdirectories (`msg`, `srv`, and `action`):
 ```
 mkdir msg srv action
 ```
@@ -436,7 +436,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 
 <details><summary>Creating Launch files with custom Parameters</summary>
 
-- Create a `launch` directory in the package, there create the launch files with custom parameters:
+- Create a `launch` directory in the package, and in it create the launch files with custom parameters:
 ```
 from launch import LaunchDescription
 from launch_ros.actions import Node
@@ -500,7 +500,7 @@ The `AIML` directory contains the bag file (`AIML_bag_191223`) and the required 
 ```
 ros2 bag info AIML_bag_191223
 ```
-This displays a lot of information, such as the size of the recording, the duration, the start and end time, the number of messages recorded and a list of the recorded topics, as well as their type of messages.
+This displays a lot of information, such as the size of the recording, the duration, the start and end time, the number of messages recorded, and a list of the recorded topics, as well as their type of messages.
 
 - Focusing on the `/gps/receive` topic, it uses the interface `ccpm_msgs/msg/GPSMessage`:
 ```
@@ -516,7 +516,7 @@ uint8 gps_fix
 uint8 status
 ```
 
-- To see the messages that pass through that topic, first it is needed to start the bag file's replay:
+- To see the messages that pass through that topic, first, it is needed to start the bag file's replay:
 ```
 ros2 bag play AIML_bag_191223 --topics /gps/receive -p
 ```
@@ -524,7 +524,7 @@ And then, in a different Command Line, it is needed to echo the topic:
 ```
 ros2 topic echo /gps/receive > txt/gps_receive.txt
 ```
-Using the `> gps_receive.txt` command, all the messages that pass through that topic are stored in the `gps_receive.txt` file, which have this format:
+Using the `> gps_receive.txt` command, all the messages that pass through that topic are stored in the `gps_receive.txt` file, which has this format:
 ```
 header:
   stamp:
@@ -546,7 +546,7 @@ status: 125
 
 <details><summary>Converting Rosbag to Pandas dataframe and CSV</summary>
 
-Despite being possible to save the data in a `.txt` file, like shown before, that format is not practical for analysing the data. Using Python, the Pandas dataframe is way more convenient and there's a Python library called [rosbag_pandas](https://github.com/eurogroep/rosbag_pandas) that converts ROS bagfiles to Pandas dataframes, and it also has 3 useful scripts: `bag_csv`, `bag_plot` and `bag_print`.
+Despite being possible to save the data in a `.txt` file, as shown before, that format is not practical for analyzing the data. Using Python, the Pandas dataframe is way more convenient and there's a Python library called [rosbag_pandas](https://github.com/eurogroep/rosbag_pandas) that converts ROS bagfiles to Pandas dataframes, and it also has 3 useful scripts: `bag_csv`, `bag_plot`, and `bag_print`.
 
 After installing this library and trying to run it, the error `ModuleNotFoundError: No module named 'rosbag'` appeared. This shows that `rosbag` is from ROS and not from ROS2, which uses `rosbag2`, so the library is not compatible. As a solution, the [rosbags-dataframe](https://pypi.org/project/rosbags-dataframe/) is a promising Python library that can read ROS2 bag files and convert them to the Pandas dataframe.
 
@@ -631,9 +631,9 @@ File <string>:55, in deserialize_cdr(rawdata, pos, cls, typestore)
 error: unpack_from requires a buffer of at least 77 bytes for unpacking 1 bytes at offset 76 (actual buffer size is 76)
 ```
 
-This indicates that there is an error in the deserialization process on one message of that topic, when attempting to unpack a buffer of 76 bytes where it should have at least 77 bytes.
+This indicates that there is an error in the deserialization process on one message of that topic when attempting to unpack a buffer of 76 bytes where it should have at least 77 bytes.
 
-To solve this problem, I changed the code from the line 101 of the `rosbags/dataframe/dataframe.py` file from:
+To solve this problem, I changed the code from line 101 of the `rosbags/dataframe/dataframe.py` file from:
 ```
 for _, timestamp, rawdata in reader.messages(connections=topic.connections):
     msg = reader.deserialize(rawdata, topic.msgtype)
@@ -653,7 +653,7 @@ for _, timestamp, rawdata in reader.messages(connections=topic.connections):
         print(f'There was an error in the message #{msgnum} of {topicname}:\n{e}')
 ```
 
-This makes it so that when there's an error deserializing a message, it gets ignored. This way, it is possible to convert the topics `/motor0/status` and `/motor1/status` to the Pandas dataframe with only 1 message missing from `/motor0/status` and 5 from `/motor1/status`, as shown here (since the topics have 102401 message each, 1 or 5 messages missing is not serious for analysing the data):
+This makes it so that when there's an error deserializing a message, it gets ignored. This way, it is possible to convert the topics `/motor0/status` and `/motor1/status` to the Pandas dataframe with only 1 message missing from `/motor0/status` and 5 from `/motor1/status`, as shown here (since the topics have 102401 message each, 1 or 5 messages missing is not serious for analyzing the data):
 ```
 There was an error in the message #35665 of /motor0/status:
 
@@ -669,5 +669,15 @@ There was an error in the message #83292 of /motor1/status:
 unpack_from requires a buffer of at least 77 bytes for unpacking 1 bytes at offset 76 (actual buffer size is 76)
 ```
 
-Then, the Pandas dataframes are saved as `csv` files in the `AIML > csv` directory.
+Then, the Pandas dataframes are saved as CSV files in the `AIML > csv` directory.
+</details>
+
+## IMU-rosbag_11032024 file
+The `IMU` directory contains the bag file (`IMU-rosbag_11032024`) and the required interfaces (`src > ccpm_msgs`).
+
+<details><summary>Converting Rosbag to Pandas dataframe and CSV</summary>
+
+The same process that was done to the `AIML_bag_191223` file was done to `IMU-rosbag_11032024`, converting the bag file to the Pandas dataframe and then to CSV files.
+
+But while the `AIML_bag_191223` only had 6 messages that were not converted due to errors, the `IMU-rosbag_11032024` has 25 (all on the `/motor0/status` topic).
 </details>
