@@ -7,16 +7,10 @@ tutorial-ws/log
 tutorial-ws/src/examples
 tutorial-ws/src/ros_tutorials
 
-AIML/build
-AIML/install
-AIML/log
+ccpm/build
+ccpm/install
+ccpm/log
 
-AIML/test.py
-AIML/rptest.py
-AIML/test.ipynb
+ccpm/converted-data
 
-IMU/build
-IMU/install
-IMU/log
-
-IMU/test.py
+ccpm/test.py

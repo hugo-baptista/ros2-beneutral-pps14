@@ -1,8 +1,0 @@
-float32 brake_pos
-float32 target_pos
-bool brake_reached_target
-uint16 brake_status
-float32 motor_current
-uint8 brake_speed
-uint8 brake_motor_status
-uint8 brake_motor_error_codes

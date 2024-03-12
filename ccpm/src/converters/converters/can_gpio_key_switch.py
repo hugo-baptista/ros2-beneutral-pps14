@@ -10,7 +10,7 @@ class Motor0Converter(Node):
     def __init__(self):
         super().__init__('minimal_subscriber')
 
-        self.csv_directory = '/home/hugobaptista/ros2/IMU/csv_nodes'
+        self.csv_directory = '/home/hugobaptista/ros2/ccpm/converted-data'
         self.message_type = CanGPIO
         self.topic_name = '/can_gpio/key_switch'
 

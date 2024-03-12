@@ -2,7 +2,7 @@ import rclpy
 import os
 from rclpy.node import Node
 
-from ccpm_msgs.msg import GPSMessage
+from ccpm_msgs.msg import DOF6
 
 
 class Motor0Converter(Node):
@@ -10,9 +10,9 @@ class Motor0Converter(Node):
     def __init__(self):
         super().__init__('minimal_subscriber')
 
-        self.csv_directory = '/home/hugobaptista/ros2/IMU/csv_nodes'
-        self.message_type = GPSMessage
-        self.topic_name = '/gps/receive'
+        self.csv_directory = '/home/hugobaptista/ros2/ccpm/converted-data'
+        self.message_type = DOF6
+        self.topic_name = '/IMU/data'
 
         self.csv_filename = self.detect_csv()
         self.subscription = self.create_subscription(

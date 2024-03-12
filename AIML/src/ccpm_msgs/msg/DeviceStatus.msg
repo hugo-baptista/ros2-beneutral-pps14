@@ -1,9 +1,0 @@
-std_msgs/Header header
-uint16[] cpu_usage
-uint32 free_ram
-uint32 total_ram
-uint64 disk_usage
-uint64 total_disk_space
-float32 device_tmp
-uint64 up_time
-NetworkStatus[] available_networks
