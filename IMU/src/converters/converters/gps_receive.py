@@ -35,10 +35,8 @@ class Motor0Converter(Node):
                 value = getattr(msg, field)
                 if '.msg.' in str(value):
                     file.write(f'"{value}"')
-                    print(f'{field}: "{value}"')
                 else:
                     file.write(f'{value}')
-                    print(f'{field}: {value}')
                 if field != list(self.message_type.get_fields_and_field_types().keys())[-1]:
                     file.write(f',')
             file.write('\n')
