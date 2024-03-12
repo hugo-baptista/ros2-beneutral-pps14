@@ -19,7 +19,7 @@ class Motor0Converter(Node):
             self.message_type,
             self.topic_name,
             self.listener_callback,
-            10)
+            500)
         self.subscription
 
     def detect_csv(self):
