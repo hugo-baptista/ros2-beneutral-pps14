@@ -19,7 +19,7 @@ class Motor0Converter(Node):
             self.message_type,
             self.topic_name,
             self.listener_callback,
-            10)
+            20)     # buffer
         self.subscription
 
     def detect_csv(self):
@@ -31,7 +31,17 @@ class Motor0Converter(Node):
 
     def listener_callback(self, msg):
         with open(f'{self.csv_directory}/{self.csv_filename}','a') as file:
-            file.write(','.join([str(getattr(msg, field)) for field in self.message_type.get_fields_and_field_types().keys()])+'\n')
+            for field in self.message_type.get_fields_and_field_types().keys():
+                value = getattr(msg, field)
+                if '.msg.' in str(value):
+                    file.write(f'"{value}"')
+                    print(f'{field}: "{value}"')
+                else:
+                    file.write(f'{value}')
+                    print(f'{field}: {value}')
+                if field != list(self.message_type.get_fields_and_field_types().keys())[-1]:
+                    file.write(f',')
+            file.write('\n')
 
 def main(args=None):
     rclpy.init(args=args)
