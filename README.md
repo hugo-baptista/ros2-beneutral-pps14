@@ -492,7 +492,7 @@ rosdep install -i --from-path src --rosdistro humble -y
 </details>
 
 ## CCPM rosbag files
-The `ccpm` directory contains the bag files `AIML_bag_191223` and `IMU-rosbag_11032024` as well as some related data files (`.txt` and `.csv` on `AIML-data` and `IMU-data`) and the packages related to work in those environments (such as the interface `src > ccpm_msgs`).
+The `ccpm` directory contains the bag files `AIML_bag_191223` and `IMU-rosbag_11032024` as well as some related data files (`.txt` and `.csv`) and the packages related to work in those environments (such as the interface `src > ccpm_msgs`).
 
 ### AIML_bag_191223 file
 <details><summary>Replaying the bag file and viewing the data</summary>
@@ -523,9 +523,9 @@ ros2 bag play AIML_bag_191223 --topics /gps/receive -p
 ```
 And then, in a different Command Line, it is needed to echo the topic:
 ```
-ros2 topic echo /gps/receive > AIML-data/txt/gps_receive.txt
+ros2 topic echo /gps/receive > AIML_bag_191223/txt/gps_receive.txt
 ```
-Using the `> AIML-data/txt/gps_receive.txt` command, all the messages that pass through that topic are stored in the `gps_receive.txt` file, which has this format:
+Using the `> AIML_bag_191223/txt/gps_receive.txt` command, all the messages that pass through that topic are stored in the `gps_receive.txt` file, which has this format:
 ```
 header:
   stamp:
@@ -670,7 +670,7 @@ There was an error in the message #83292 of /motor1/status:
 unpack_from requires a buffer of at least 77 bytes for unpacking 1 bytes at offset 76 (actual buffer size is 76)
 ```
 
-Then, the Pandas dataframes are saved as CSV files in the `AIML-data > csv` directory.
+Then, the Pandas dataframes are saved as CSV files in the `AIML_bag_191223 > csv` directory.
 </details>
 
 ### IMU-rosbag_11032024 file
@@ -683,5 +683,5 @@ But while the `AIML_bag_191223` only had 6 messages that were not converted due 
 
 <details><summary>Listener and converter nodes</summary>
 
-Based on the `subscriber_member_function.py` node present in the `py_pubsub` package, built on the `tutorial-ws`, the packages `listeners` and `converters` have nodes that listen to the `IMU-rosbag_11032024`'s topics and convert them one message at a time to CSV files in the `IMU-data > csv_nodes` directory, respectively.
+Based on the `subscriber_member_function.py` node present in the `py_pubsub` package, built on the `tutorial-ws`, the packages `listeners` and `converters` have nodes that listen to the `IMU-rosbag_11032024`'s topics and convert them one message at a time to CSV files in the `IMU-rosbag_11032024 > csv_nodes` directory, respectively.
 </details>

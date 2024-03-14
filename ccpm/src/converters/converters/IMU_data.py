@@ -13,6 +13,7 @@ class Motor0Converter(Node):
         self.csv_directory = '/home/hugobaptista/ros2/ccpm/converted-data'
         self.message_type = DOF6
         self.topic_name = '/IMU/data'
+        self.new_csv = True
 
         self.csv_filename = self.detect_csv()
         self.subscription = self.create_subscription(
@@ -24,7 +25,7 @@ class Motor0Converter(Node):
 
     def detect_csv(self):
         filename = f'{self.topic_name[1:].replace("/","_")}.csv'
-        if filename not in os.listdir(f'{self.csv_directory}'):                                     # if the csv file does not exist
+        if self.new_csv or filename not in os.listdir(f'{self.csv_directory}'):                                     # if the csv file does not exist
             with open(f'{self.csv_directory}/{filename}','w') as file:                              # create a new csv file
                 file.write(','.join(self.message_type.get_fields_and_field_types().keys())+'\n')    # and add the csv header
         return filename
