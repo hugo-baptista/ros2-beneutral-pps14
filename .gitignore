@@ -11,7 +11,7 @@ ccpm/build
 ccpm/install
 ccpm/log
 
-ccpm/converted-data
+ccpm/converted-data/*
 
 ccpm/test.py
 ccpm/errors.csv

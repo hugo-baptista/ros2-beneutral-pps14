@@ -651,7 +651,7 @@ for _, timestamp, rawdata in reader.messages(connections=topic.connections):
         timestamps.append(timestamp)
         data.append([x(msg) for x in getters])
     except Exception as e:
-        print(f'There was an error in the message #{msgnum} of {topicname}:\n{e}')
+        print(f'{topicname} message #{msgnum} {type(e)} error: {e}')
 ```
 
 This makes it so that when there's an error deserializing a message, it gets ignored. This way, it is possible to convert the topics `/motor0/status` and `/motor1/status` to the Pandas dataframe with only 1 message missing from `/motor0/status` and 5 from `/motor1/status`, as shown here (since the topics have 102401 message each, 1 or 5 messages missing is not serious for analyzing the data):
