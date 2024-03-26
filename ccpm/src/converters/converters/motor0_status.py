@@ -1,5 +1,6 @@
 import rclpy
 import os
+import time
 from rclpy.node import Node
 
 from ccpm_msgs.msg import XP0Powertrain
@@ -20,18 +21,20 @@ class Motor0Converter(Node):
             self.message_type,
             self.topic_name,
             self.listener_callback,
-            1500)     # buffer
+            5000)     # buffer
         self.subscription
 
     def detect_csv(self):
         filename = f'{self.topic_name[1:].replace("/","_")}.csv'
-        if self.new_csv or filename not in os.listdir(f'{self.csv_directory}'):                                     # if the csv file does not exist
+        if self.new_csv or filename not in os.listdir(f'{self.csv_directory}'):                     # if the csv file does not exist
             with open(f'{self.csv_directory}/{filename}','w') as file:                              # create a new csv file
-                file.write(','.join(self.message_type.get_fields_and_field_types().keys())+'\n')    # and add the csv header
+                file.write('timestamp,'+','.join(self.message_type.get_fields_and_field_types().keys())+'\n')    # and add the csv header
         return filename
 
     def listener_callback(self, msg):
+        timestamp=time.time()
         with open(f'{self.csv_directory}/{self.csv_filename}','a') as file:
+            file.write(f'{timestamp},')
             for field in self.message_type.get_fields_and_field_types().keys():
                 value = getattr(msg, field)
                 if '.msg.' in str(value):
